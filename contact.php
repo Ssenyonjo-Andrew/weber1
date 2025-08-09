@@ -16,10 +16,10 @@ if(isset($_POST['send']))
 		$sql="INSERT INTO contact (name,email,phone,subject,message) VALUES ('$name','$email','$phone','$subject','$message')";
 		   $result=mysqli_query($con, $sql);
 		   if($result){
-			   $msg = "<p class='alert alert-success'>Message Send Successfully</p> ";
+			   $msg = "<p class='alert alert-success'>Message Sent Successfully</p> ";
 		   }
 		   else{
-			   $error = "<p class='alert alert-warning'>Message Not Send Successfully</p> ";
+			   $error = "<p class='alert alert-warning'>Message Not Sent Successfully</p> ";
 		   }
 	}else{
 		$error = "<p class='alert alert-warning'>Please Fill all the fields</p>";
@@ -107,25 +107,25 @@ if(isset($_POST['send']))
                             <h3 class="mb-4 mt-4 text-white">Contacts</h3>
 							
                             <ul>
-                                <li class="d-flex mb-4"> <i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>
+                                <li class="d-flex mb-4">
                                     <div class="contact-address">
                                         <h5 class="text-white">Address</h5>
                                         <span class="text-white">27 Ingram Street, Dayton</span> <br>
 										<span class="text-white">27 Ingram Street, Dayton</span>
 										</div>
                                 </li>
-                                <li class="d-flex mb-4"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>
+                                <li class="d-flex mb-4">
                                     <div class="contact-address">
                                         <h5 class="text-white">Call Us</h5>
-                                        <span class="d-table text-white">+1 234-567-8910</span>
-										<span class="text-white">+1 243-765-4321 </span>
+                                        <span class="d-table text-white">+256-756-408-028</span>
+										<span class="text-white">+256-703-720-539 </span>
 									</div>
                                 </li>
-                                <li class="d-flex mb-4"> <i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>
+                                <li class="d-flex mb-4">
                                     <div class="contact-address">
                                         <h5 class="text-white">Email Adderss</h5>
-										<span class="d-table text-white">helpline@realestatest.com</span>
-										<span class="text-white">helpline@realestatest.com</span>
+										<span class="d-table text-white">hollandcontractorsltd@gmail.com</span>
+										<span class="text-white">hollandcontractorsltd@gmail.com</span>
 										</div>
                                 </li>
                             </ul>

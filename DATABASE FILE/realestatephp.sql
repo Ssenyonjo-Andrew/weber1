@@ -141,20 +141,15 @@ CREATE TABLE `property` (
   `title` varchar(200) NOT NULL,
   `pcontent` longtext NOT NULL,
   `type` varchar(100) NOT NULL,
-  `bhk` varchar(50) NOT NULL,
+  
   `stype` varchar(100) NOT NULL,
-  `bedroom` int(50) NOT NULL,
-  `bathroom` int(50) NOT NULL,
-  `balcony` int(50) NOT NULL,
-  `kitchen` int(50) NOT NULL,
-  `hall` int(50) NOT NULL,
-  `floor` varchar(50) NOT NULL,
-  `size` int(50) NOT NULL,
+  
+  `size` Varchar(50) NOT NULL,
   `price` int(50) NOT NULL,
   `location` varchar(200) NOT NULL,
   `city` varchar(100) NOT NULL,
   `state` varchar(100) NOT NULL,
-  `feature` longtext NOT NULL,
+  
   `pimage` varchar(300) NOT NULL,
   `pimage1` varchar(300) NOT NULL,
   `pimage2` varchar(300) NOT NULL,
@@ -163,19 +158,19 @@ CREATE TABLE `property` (
   `uid` int(50) NOT NULL,
   `status` varchar(50) NOT NULL,
   `mapimage` varchar(300) NOT NULL,
-  `topmapimage` varchar(300) NOT NULL,
+  
   `groundmapimage` varchar(300) NOT NULL,
-  `totalfloor` varchar(50) NOT NULL,
+  
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `isFeatured` int(11) DEFAULT NULL
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `property`
 --
 
-INSERT INTO `property` (`pid`, `title`, `pcontent`, `type`, `bhk`, `stype`, `bedroom`, `bathroom`, `balcony`, `kitchen`, `hall`, `floor`, `size`, `price`, `location`, `city`, `state`, `feature`, `pimage`, `pimage1`, `pimage2`, `pimage3`, `pimage4`, `uid`, `status`, `mapimage`, `topmapimage`, `groundmapimage`, `totalfloor`, `date`, `isFeatured`) VALUES
-(25, 'Zills Home', '', 'house', '4 BHK', 'sale', 4, 2, 0, 1, 1, '2nd Floor', 1869, 219690, '39 Bailey Drive', 'Floson', 'Colotana', '<p>&nbsp;</p>\r\n<!---feature area start--->\r\n<div class=\"col-md-4\">\r\n<ul>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Property Age : </span>10 Years</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Swiming Pool : </span>Yes</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Parking : </span>Yes</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">GYM : </span>Yes</li>\r\n</ul>\r\n</div>\r\n<div class=\"col-md-4\">\r\n<ul>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Type : </span>Appartment</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Security : </span>Yes</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Dining Capacity : </span>10 People</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Church/Temple : </span>Yes</li>\r\n</ul>\r\n</div>\r\n<div class=\"col-md-4\">\r\n<ul>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">3rd Party : </span>No</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Elevator : </span>Yes</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">CCTV : </span>Yes</li>\r\n<li class=\"mb-3\"><span class=\"text-secondary font-weight-bold\">Water Supply : </span>Ground Water / Tank</li>\r\n</ul>\r\n</div>\r\n<!---feature area end---->\r\n<p>&nbsp;</p>', 'zillhms1.jpg', 'zillhms2.jpg', 'zillhms3.jpg', 'zillhms4.jpg', 'zillhms5.jpg', 30, 'available', 'floorplan_sample.jpg', 'zillhms7.jpg', 'zillhms6.jpg', '2 Floor', '2022-07-22 22:29:20', 0);
+INSERT INTO `property` (`pid`, `title`, `pcontent`, `type`,  `stype`, `size`, `price`, `location`, `city`, `state`,`pimage`, `pimage1`, `pimage2`, `pimage3`, `pimage4`, `uid`, `status`, `mapimage`, `groundmapimage`,  `date`) VALUES
+(25, 'Zills Home', '', 'house',  'sale',  1869, 219690, '39 Bailey Drive', 'Floson', 'Colotana', 'zillhms1.jpg', 'zillhms2.jpg', 'zillhms3.jpg', 'zillhms4.jpg', 'zillhms5.jpg', 30, 'available', 'floorplan_sample.jpg',  'zillhms6.jpg', '2022-07-22 22:29:20');
 
 -- --------------------------------------------------------
 

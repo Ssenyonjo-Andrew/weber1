@@ -401,13 +401,13 @@ button.bg-primary:hover {
 }
 .bg-success,
 .badge-success {
-  background-color: #7bb13c !important;
+  background-color: #2962ff !important;
 }
 a.bg-success:focus,
 a.bg-success:hover,
 button.bg-success:focus,
 button.bg-success:hover {
-  background-color: #699834 !important;
+  background-color: #1e3a8a !important;
 }
 .bg-info,
 .badge-info {
@@ -452,7 +452,7 @@ button.bg-danger:hover {
 }
 .text-success,
 .dropdown-menu > li > a.text-success {
-  color: #699834 !important;
+  color: #2962ff !important;
 }
 .text-danger,
 .dropdown-menu > li > a.text-danger {
@@ -521,17 +521,17 @@ button.bg-danger:hover {
   box-shadow: unset;
 }
 .btn-success {
-  background-color: #7bb13c;
-  border: 1px solid #7bb13c;
+  background-color: #2962ff !important;
+  border: 1px solid #2962ff !important;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.active,
 .btn-success:active,
 .open > .dropdown-toggle.btn-success {
-  background-color: #699834;
-  border: 1px solid #699834;
-  color: #fff;
+  background-color: #1e3a8a !important;
+  border: 1px solid #1e3a8a !important;
+  color: #fff !important;
 }
 .btn-success.active.focus,
 .btn-success.active:focus,
@@ -542,15 +542,15 @@ button.bg-danger:hover {
 .open > .dropdown-toggle.btn-success.focus,
 .open > .dropdown-toggle.btn-success:focus,
 .open > .dropdown-toggle.btn-success:hover {
-  background-color: #699834;
-  border: 1px solid #699834;
+  background-color: #1e3a8a !important;
+  border: 1px solid #1e3a8a !important;
 }
 .btn-success.active:not(:disabled):not(.disabled),
 .btn-success:active:not(:disabled):not(.disabled),
 .show > .btn-success.dropdown-toggle {
-  background-color: #699834;
-  border-color: #699834;
-  color: #fff;
+  background-color: #1e3a8a !important;
+  border-color: #1e3a8a !important;
+  color: #fff !important;
 }
 .btn-success.active:focus:not(:disabled):not(.disabled),
 .btn-success:active:focus:not(:disabled):not(.disabled),
@@ -559,9 +559,9 @@ button.bg-danger:hover {
 }
 .btn-success.disabled,
 .btn-success:disabled {
-  background-color: #7bb13c;
-  border-color: #7bb13c;
-  color: #fff;
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: #fff !important;
 }
 .btn-info {
   background-color: #009efb;
@@ -728,12 +728,12 @@ button.bg-danger:hover {
   box-shadow: none;
 }
 .btn-outline-success {
-  color: #7bb13c;
-  border-color: #7bb13c;
+  color: #2962ff !important;
+  border-color: #2962ff !important;
 }
 .btn-outline-success:hover {
-  background-color: #7bb13c;
-  border-color: #7bb13c;
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
 }
 .btn-outline-success:focus,
 .btn-outline-success.focus {
@@ -741,14 +741,14 @@ button.bg-danger:hover {
 }
 .btn-outline-success.disabled,
 .btn-outline-success:disabled {
-  color: #7bb13c;
-  background-color: transparent;
+  color: #2962ff !important;
+  background-color: transparent !important;
 }
 .btn-outline-success:not(:disabled):not(.disabled):active,
 .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
-  background-color: #7bb13c;
-  border-color: #7bb13c;
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
 }
 .btn-outline-success:not(:disabled):not(.disabled):active:focus,
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
@@ -953,8 +953,8 @@ button.bg-danger:hover {
   color: #f39c12 !important;
 }
 .bg-success-light {
-  background-color: rgba(15, 183, 107, 0.12) !important;
-  color: #26af48 !important;
+  background-color: rgba(41, 98, 255, 0.12) !important;
+  color: #2962ff !important;
 }
 .bg-purple-light {
   background-color: rgba(197, 128, 255, 0.12) !important;
@@ -1267,7 +1267,7 @@ button.bg-danger:hover {
   border: 2px solid #fff;
 }
 .avatar-online:before {
-  background-color: #7bb13c;
+  background-color: #2962ff;
 }
 .avatar-offline:before {
   background-color: #e84646;
@@ -4245,4 +4245,355 @@ table.table-inbox tbody tr.checked {
   .page-header .breadcrumb {
     display: none;
   }
+}
+
+/* Additional CSS to override Bootstrap success styles */
+/* Override Bootstrap CSS variables */
+:root {
+  --success: #2962ff !important;
+  --green: #2962ff !important;
+}
+
+/* Override all Bootstrap success/green colors */
+.btn-success,
+button.btn-success,
+input[type="button"].btn-success,
+input[type="submit"].btn-success,
+input[type="reset"].btn-success {
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: #fff !important;
+}
+
+.btn-success:hover,
+button.btn-success:hover,
+input[type="button"].btn-success:hover,
+input[type="submit"].btn-success:hover,
+input[type="reset"].btn-success:hover,
+.btn-success:focus,
+button.btn-success:focus,
+input[type="button"].btn-success:focus,
+input[type="submit"].btn-success:focus,
+input[type="reset"].btn-success:focus,
+.btn-success.active,
+button.btn-success.active,
+input[type="button"].btn-success.active,
+input[type="submit"].btn-success.active,
+input[type="reset"].btn-success.active,
+.btn-success:active,
+button.btn-success:active,
+input[type="button"].btn-success:active,
+input[type="submit"].btn-success:active,
+input[type="reset"].btn-success:active {
+  background-color: #1e3a8a !important;
+  border-color: #1e3a8a !important;
+  color: #fff !important;
+}
+
+.btn-outline-success,
+button.btn-outline-success,
+input[type="button"].btn-outline-success,
+input[type="submit"].btn-outline-success,
+input[type="reset"].btn-outline-success {
+  color: #2962ff !important;
+  border-color: #2962ff !important;
+}
+
+.btn-outline-success:hover,
+button.btn-outline-success:hover,
+input[type="button"].btn-outline-success:hover,
+input[type="submit"].btn-outline-success:hover,
+input[type="reset"].btn-outline-success:hover {
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: #fff !important;
+}
+
+.bg-success,
+.badge.badge-success,
+span.badge-success {
+  background-color: #2962ff !important;
+}
+
+.text-success,
+.text-success a,
+a.text-success {
+  color: #2962ff !important;
+}
+
+/* Override Bootstrap table success styles */
+.table-success,
+.table-success > td,
+.table-success > th {
+  background-color: rgba(41, 98, 255, 0.1) !important;
+}
+
+.table-success tbody + tbody,
+.table-success td,
+.table-success th,
+.table-success thead th {
+  border-color: #2962ff !important;
+}
+
+.table-hover .table-success:hover,
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+  background-color: rgba(41, 98, 255, 0.2) !important;
+}
+
+/* Override Bootstrap alert success styles */
+.alert-success {
+  color: #1e3a8a !important;
+  background-color: rgba(41, 98, 255, 0.1) !important;
+  border-color: #2962ff !important;
+}
+
+.alert-success hr {
+  border-top-color: #2962ff !important;
+}
+
+.alert-success .alert-link {
+  color: #1e3a8a !important;
+}
+
+/* Override Bootstrap list group success styles */
+.list-group-item-success {
+  color: #1e3a8a !important;
+  background-color: rgba(41, 98, 255, 0.1) !important;
+}
+
+.list-group-item-success.list-group-item-action:focus,
+.list-group-item-success.list-group-item-action:hover {
+  color: #1e3a8a !important;
+  background-color: rgba(41, 98, 255, 0.2) !important;
+}
+
+.list-group-item-success.list-group-item-action.active {
+  color: #fff !important;
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+}
+
+/* Override Bootstrap border success styles */
+.border-success {
+  border-color: #2962ff !important;
+}
+
+/* Override Bootstrap form validation styles */
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: #2962ff !important;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: #2962ff !important;
+  box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.25) !important;
+}
+
+.custom-select.is-valid,
+.was-validated .custom-select:valid {
+  border-color: #2962ff !important;
+}
+
+.custom-select.is-valid:focus,
+.was-validated .custom-select:valid:focus {
+  border-color: #2962ff !important;
+  box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.25) !important;
+}
+
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #2962ff !important;
+}
+
+.custom-control-input.is-valid ~ .custom-control-label,
+.was-validated .custom-control-input:valid ~ .custom-control-label {
+  color: #2962ff !important;
+}
+
+.custom-control-input.is-valid ~ .custom-control-label::before,
+.was-validated .custom-control-input:valid ~ .custom-control-label::before {
+  border-color: #2962ff !important;
+}
+
+.custom-file-input.is-valid ~ .custom-file-label,
+.was-validated .custom-file-input:valid ~ .custom-file-label {
+  border-color: #2962ff !important;
+}
+
+.custom-file-input.is-valid:focus ~ .custom-file-label,
+.was-validated .custom-file-input:valid:focus ~ .custom-file-label {
+  border-color: #2962ff !important;
+  box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.25) !important;
+}
+
+.valid-feedback {
+  color: #2962ff !important;
+}
+
+.valid-tooltip {
+  background-color: rgba(41, 98, 255, 0.9) !important;
+}
+
+/* Override TinyMCE success styles */
+.mce-notification-success {
+  background-color: rgba(41, 98, 255, 0.1) !important;
+  border-color: #2962ff !important;
+}
+
+.mce-notification-success *,
+.mce-notification-success .mce-progress .mce-text {
+  color: #2962ff !important;
+}
+
+.mce-notification-success .mce-progress .mce-bar-container {
+  border-color: #2962ff !important;
+}
+
+.mce-notification-success .mce-progress .mce-bar-container .mce-bar {
+  background-color: #2962ff !important;
+}
+
+.mce-infobox.mce-success {
+  background: rgba(41, 98, 255, 0.1) !important;
+  border-color: #2962ff !important;
+}
+
+.mce-infobox.mce-success div {
+  color: #2962ff !important;
+}
+
+.mce-label.mce-success {
+  color: #2962ff !important;
+}
+
+/* Override any remaining green colors */
+[style*="background-color: green"],
+[style*="background-color: #28a745"],
+[style*="background-color: #218838"],
+[style*="background-color: #1e7e34"],
+[style*="background-color: #155724"],
+[style*="background-color: #0b2e13"],
+[style*="background-color: #3c763d"],
+[style*="background-color: #d4edda"],
+[style*="background-color: #c3e6cb"],
+[style*="background-color: #b1dfbb"],
+[style*="background-color: #8fd19e"] {
+  background-color: #2962ff !important;
+}
+
+[style*="color: green"],
+[style*="color: #28a745"],
+[style*="color: #218838"],
+[style*="color: #1e7e34"],
+[style*="color: #155724"],
+[style*="color: #0b2e13"],
+[style*="color: #3c763d"],
+[style*="color: #468847"] {
+  color: #2962ff !important;
+}
+
+[style*="border-color: green"],
+[style*="border-color: #28a745"],
+[style*="border-color: #218838"],
+[style*="border-color: #1e7e34"],
+[style*="border-color: #155724"],
+[style*="border-color: #0b2e13"],
+[style*="border-color: #3c763d"],
+[style*="border-color: #d4edda"],
+[style*="border-color: #c3e6cb"],
+[style*="border-color: #b1dfbb"],
+[style*="border-color: #8fd19e"] {
+  border-color: #2962ff !important;
+}
+.btn.btn-success,
+button.btn-success,
+input[type="button"].btn-success,
+input[type="submit"].btn-success,
+input[type="reset"].btn-success {
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: #fff !important;
+}
+
+.btn.btn-success:hover,
+button.btn-success:hover,
+input[type="button"].btn-success:hover,
+input[type="submit"].btn-success:hover,
+input[type="reset"].btn-success:hover,
+.btn.btn-success:focus,
+button.btn-success:focus,
+input[type="button"].btn-success:focus,
+input[type="submit"].btn-success:focus,
+input[type="reset"].btn-success:focus,
+.btn.btn-success.active,
+button.btn-success.active,
+input[type="button"].btn-success.active,
+input[type="submit"].btn-success.active,
+input[type="reset"].btn-success.active,
+.btn.btn-success:active,
+button.btn-success:active,
+input[type="button"].btn-success:active,
+input[type="submit"].btn-success:active,
+input[type="reset"].btn-success:active {
+  background-color: #1e3a8a !important;
+  border-color: #1e3a8a !important;
+  color: #fff !important;
+}
+
+.btn.btn-outline-success,
+button.btn-outline-success,
+input[type="button"].btn-outline-success,
+input[type="submit"].btn-outline-success,
+input[type="reset"].btn-outline-success {
+  color: #2962ff !important;
+  border-color: #2962ff !important;
+}
+
+.btn.btn-outline-success:hover,
+button.btn-outline-success:hover,
+input[type="button"].btn-outline-success:hover,
+input[type="submit"].btn-outline-success:hover,
+input[type="reset"].btn-outline-success:hover {
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: #fff !important;
+}
+
+.bg-success,
+.badge.badge-success,
+span.badge-success {
+  background-color: #2962ff !important;
+}
+
+.text-success,
+.text-success a,
+a.text-success {
+  color: #2962ff !important;
+}
+
+/* Override Bootstrap's CSS variables */
+:root {
+  --success: #2962ff !important;
+}
+
+/* Additional specificity for form validation */
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: #2962ff !important;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: #2962ff !important;
+  box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.25) !important;
+}
+
+.valid-feedback {
+  color: #2962ff !important;
+}
+
+.valid-tooltip {
+  background-color: rgba(41, 98, 255, 0.9) !important;
 }

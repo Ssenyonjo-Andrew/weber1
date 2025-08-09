@@ -4,7 +4,7 @@ session_cache_limiter(false);
 session_start();
 include("config.php");
 ///code								
-?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,7 @@ include("config.php");
 <meta name="keywords" content="">
 <meta name="author" content="Unicoder">
 <link rel="shortcut icon" href="images/favicon.ico">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <!--	Fonts
 	========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@ include("config.php");
         <!--	Header start  -->
 		<?php include("include/header.php");?>
         <!--	Header end  -->
-        <!-- FOR MORE PROJECTS visit: codeastro.com -->
+        
         <!--	Banner   --->
         <!-- <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
             <div class="container">
@@ -98,24 +98,24 @@ include("config.php");
 									
                             <div class="col-md-6">
                                 <div class="featured-thumb hover-zoomer mb-4">
-                                    <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                    <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
                                         
-                                        <div class="sale bg-success text-white">For <?php echo $row['5'];?></div>
-                                        <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
+                                        <div class="sale bg-success text-white">For <?php echo $row['4'];?></div>
+                                        <div class="price text-primary text-capitalize">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
                                         
-                                    </div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                                    </div>
                                     <div class="featured-thumb-data shadow-one">
                                         <div class="p-4">
                                             <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                            <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> <?php echo $row['14'];?></span> </div>
+                                            <span class="location text-capitalize"><?php echo $row['7'];?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
-                                            <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : <?php echo $row['uname'];?></div>
-                                            <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date']));?></div>
+                                            <div class="float-left text-capitalize">By : <?php echo $row['uname'];?></div>
+<div class="float-right"><?php echo date('d-m-Y', strtotime($row['date']));?></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <?php } ?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                            <?php } ?>
                             
 
                             
@@ -144,7 +144,7 @@ include("config.php");
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">$</div>
-                                </div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                                </div>
                                 <input type="text" class="form-control" name="amount" placeholder="Property Price">
                             </div>
                             <label class="sr-only">Month</label>
@@ -165,35 +165,20 @@ include("config.php");
                         </form>
                         </div>
 
-                        <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-5">Featured Property</h4>
-                        <ul class="property_list_widget">
-							
-                            <?php 
-                            $query=mysqli_query($con,"SELECT * FROM `property` WHERE isFeatured = 1 ORDER BY date DESC LIMIT 3");
-                                    while($row=mysqli_fetch_array($query))
-                                    {
-                            ?>
-                            <li> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
-                                <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['14'];?></span>
-                                
-                            </li>
-                            <?php } ?>
-
-                        </ul>
+                       
                         
                         <div class="sidebar-widget mt-5">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
-                            <ul class="property_list_widget"><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                            <ul class="property_list_widget">
 							
 								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 7");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>
-                                <li> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                <li> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
                                     <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['14'];?></span>
+                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['7'];?></span>
                                     
                                 </li>
                                 <?php } ?>

@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require("config.php");
 ////code
  
@@ -13,7 +13,7 @@ if(!isset($_SESSION['auser']))
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="dashboard.php" class="logo">
-						<img src="assets/img/rsadmin.png" alt="Logo">
+						<img src="assets/img/restatelg_white.jpg" alt="Logo" width="150" height="100">
 					</a>
 					<a href="dashboard.php" class="logo logo-small">
 						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
@@ -126,9 +126,10 @@ if(!isset($_SESSION['auser']))
 							<li class="submenu">
 								<a href="#"><i class="fe fe-map"></i> <span> Property</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="propertyadd.php"> Add Property</a></li>
+									<li><a href="propertyadd.php"> Add-Property</a></li>
 									<li><a href="propertyview.php"> View Property </a></li>
-									
+									<!-- <li><a href="propertyadd2.php"> Add-Property</a></li> -->
+
 								</ul>
 							</li>
 							

@@ -73,9 +73,9 @@ if(!isset($_SESSION['auser']))
 					
 					
 					<div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
+                            <div class="col-12" >
+                                <div class="card" >
+                                    <div class="card-body" >
 
                                         <h4 class="header-title mt-0 mb-4">Property View</h4>
 										<?php 
@@ -88,7 +88,7 @@ if(!isset($_SESSION['auser']))
                                                     <!-- <th>P ID</th> -->
                                                     <th>Title</th>
                                                     <th>Type</th>
-                                                    <th>BHK</th>
+                                                    <!-- <th>BHK</th> -->
                                                     <th>S/R</th>
                                                    
 													<th>Area</th>
@@ -116,18 +116,18 @@ if(!isset($_SESSION['auser']))
                                                     <!-- <td><?php echo $row['0']; ?></td> -->
                                                     <td><?php echo $row['1']; ?></td>
                                                     <td><?php echo $row['3']; ?></td>
+                                                    <!-- <td><?php echo $row['4']; ?></td> -->
                                                     <td><?php echo $row['4']; ?></td>
-                                                    <td><?php echo $row['5']; ?></td>
                                                    
-                                                    <td><?php echo $row['12']; ?></td>
-                                                    <td><?php echo $row['13']; ?></td>
-                                                    <td><?php echo $row['14']; ?></td>
+                                                    <td><?php echo $row['5']; ?></td>
+                                                    <td><?php echo $row['6']; ?></td>
+                                                    <td><?php echo $row['8']; ?></td>
 													
                                                    
-                                                    <td><?php echo $row['24']; ?></td>
+                                                    <td><?php echo $row['16']; ?></td>
 													
                                                     
-                                                    <td><?php echo $row['29']; ?></td>
+                                                    <td><?php echo $row['19']; ?></td>
 													<td><a href="propertyedit.php?id=<?php echo $row['0'];?>"><button class="btn btn-info">Edit</button></a>
                                                     <a href="propertydelete.php?id=<?php echo $row['0'];?>"><button class="btn btn-danger">Delete</button></a></td>
                                                 </tr>

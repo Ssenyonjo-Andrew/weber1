@@ -136,6 +136,11 @@ if(isset($_POST['insert']))
                                     <input type="number" name="phone"  class="form-control" placeholder="Enter Phone" maxlength="10">
                                 </div>
 
+                                <!-- <div class="form-group">
+                                    <label for="phone">Rate-Us</label>
+                                    <input type="number" name="status"  class="form-control" placeholder="Rate us (0-5)" maxlength="10">
+                                </div> -->
+
                                 <div class="form-group">
                                     <label for="about-me">Your Feedback</label>
                                     <textarea class="form-control" name="content" rows="7" placeholder="Enter Text Here...."></textarea>

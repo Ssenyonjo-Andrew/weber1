@@ -84,7 +84,7 @@ if(!isset($_SESSION['auser']))
 									<table id="basic-datatable" class="table table-bordered table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>#</th>
+                                                    <th>Agent-ID</th>
                                                     <th>Name</th>
                                                     <th>Email</th>
                                                     <th>Contact</th>
@@ -104,7 +104,7 @@ if(!isset($_SESSION['auser']))
 													{
 											?>
                                                 <tr>
-                                                    <td><?php echo $cnt; ?></td>
+												    <td><?php echo $row['0']; ?></td>
                                                     <td><?php echo $row['1']; ?></td>
                                                     <td><?php echo $row['2']; ?></td>
                                                     <td><?php echo $row['3']; ?></td>

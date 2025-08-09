@@ -5,7 +5,8 @@ session_start();
 include("config.php");
 ///code
 								
-?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +26,8 @@ include("config.php");
 	========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
+
 <!--	Css Link
 	========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -102,15 +104,16 @@ include("config.php");
                             <div class="col-md-6">
                                 <div class="featured-thumb hover-zoomer mb-4">
                                     <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
-                                        <!-- FOR MORE PROJECTS visit: codeastro.com -->
-                                        <div class="sale bg-success text-white">For <?php echo $row['5'];?></div>
-                                        <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
+                                        
+                                    
+                                        <div class="sale bg-success text-white">For <?php echo $row['4'];?></div>
+                                        <div class="price text-primary text-capitalize">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
                                         
                                     </div>
                                     <div class="featured-thumb-data shadow-one">
                                         <div class="p-4">
                                             <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                            <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> <?php echo $row['14'];?></span> </div>
+                                            <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> <?php echo $row['7'];?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
                                             <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : <?php echo $row['uname'];?></div>
                                             <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date']));?></div>
@@ -121,7 +124,8 @@ include("config.php");
                             <?php } ?>
                             
 
-                            <!-- FOR MORE PROJECTS visit: codeastro.com -->
+                            
+                            
                             
                         <!--    <div class="col-md-12">
                                 <nav aria-label="Page navigation">

@@ -58,7 +58,7 @@ include("config.php");
     <div class="row"> 
         <!--	Header One -->
         <!--	Header start  -->
-		<?php include("include/header.php");?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+		<?php include("include/header.php");?>
         <!--	Header end  -->
 
         <!--	Banner   --->
@@ -90,7 +90,6 @@ include("config.php");
                         </div>
                 </div>
                 <div class="row">
-                <!-- FOR MORE PROJECTS visit: codeastro.com -->
                     <?php 
 							$query=mysqli_query($con,"SELECT * FROM user WHERE utype='agent'");
 								while($row=mysqli_fetch_array($query))
@@ -102,7 +101,7 @@ include("config.php");
                             <div class="overflow-hidden"> <img src="admin/user/<?php echo $row['6'];?>" alt="aimage"> </div>
                             <div class="py-3 text-center">
                                 <h5 class="text-secondary hover-text-success"><a href="#"><?php echo $row['1'];?></a></h5>
-                                <span>Real Estate - Agent</span> </div>
+                                <span>hollandcontractors-Agent</span> </div>
                         </div>
                     </div>
                    
