@@ -83,7 +83,7 @@ include("config.php");
         
         <!--	Property Grid
 		===============================================================-->
-        <div class="full-row">
+        <div class="full-row"  style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="row">
 				
@@ -98,19 +98,19 @@ include("config.php");
 									
                             <div class="col-md-6">
                                 <div class="featured-thumb hover-zoomer mb-4">
-                                    <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
+                                    <div class="overlay-black overflow-hidden position-relative" style="border-radius:30px"> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
                                         
-                                        <div class="sale bg-success text-white">For <?php echo $row['4'];?></div>
-                                        <div class="price text-primary text-capitalize">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
+                                        <div class="sale  text-white" style=" background-color:blue">For <?php echo $row['4'];?></div>
+                                        <div class="price  text-capitalize" style="color:orange">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
                                         
                                     </div>
-                                    <div class="featured-thumb-data shadow-one">
+                                    <div class="featured-thumb-data shadow-one" style="border-radius:30px; color:black; background-color:white;  opacity:.9">
                                         <div class="p-4">
-                                            <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
+                                            <h5 class=" hover-text-success mb-2 text-capitalize" style="color:black"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                             <span class="location text-capitalize"><?php echo $row['7'];?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
                                             <div class="float-left text-capitalize">By : <?php echo $row['uname'];?></div>
-<div class="float-right"><?php echo date('d-m-Y', strtotime($row['date']));?></div>
+                                        <div class="float-right"><?php echo date('d-m-Y', strtotime($row['date']));?></div>
                                         </div>
                                     </div>
                                 </div>
@@ -138,37 +138,37 @@ include("config.php");
 					
                     <div class="col-lg-4">
                         <div class="sidebar-widget">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
+                            <h4 class=" position-relative pb-4 my-4" style="color:black">Instalment Calculator</h4>
 						<form class="d-inline-block w-100" action="calc.php" method="post">
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">$</div>
+                                    <div class="input-group-text" style=" border-radius:40px; color:black">Shs</div>
                                 </div>
-                                <input type="text" class="form-control" name="amount" placeholder="Property Price">
+                                <input type="text" class="form-control" name="amount" placeholder="Property Price" style=" border-radius:30px">
                             </div>
                             <label class="sr-only">Month</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                    <div class="input-group-text" style=" border-radius:40px; color:black"><i class="far fa-calendar-alt"></i></div>
                                 </div>
-                                <input type="text" class="form-control" name="month" placeholder="Duration Year">
+                                <input type="text" class="form-control" name="month" placeholder="Duration Year" style=" border-radius:30px">
                             </div>
                             <label class="sr-only">Interest Rate</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">%</div>
+                                    <div class="input-group-text" style=" border-radius:40px; color:black">%</div>
                                 </div>
-                                <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
+                                <input type="text" class="form-control" name="interest" placeholder="Interest Rate" style=" border-radius:30px">
                             </div>
-                            <button type="submit" value="submit" name="calc" class="btn btn-danger mt-4">Calculate Instalment</button>
+                            <button type="submit" value="submit" name="calc" class="btn mt-4" style=" border-radius:30px;color:black; background-color:orange" >Calculate Instalment</button>
                         </form>
                         </div>
 
                        
                         
-                        <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
+                        <div class="sidebar-widget mt-5" style="background-color:black; padding:10px; border-radius:20px;  opacity:.7">
+                            <h4 class="  position-relative pb-4 mb-4" style=" color:white;">Recently Added Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 
@@ -177,8 +177,8 @@ include("config.php");
 										{
 								?>
                                 <li> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
-                                    <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['7'];?></span>
+                                    <h6 class="  text-capitalize" style="color:white"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
+                                    <span class="font-14" style="color:white"><i class="fas fa-map-marker-alt icon-success icon-small" style="color:white"></i> <?php echo $row['7'];?></span>
                                     
                                 </li>
                                 <?php } ?>

@@ -58,25 +58,25 @@
     <body>
 	
 		<!-- Main Wrapper -->
-        <div class="page-wrappers login-body">
-            <div class="login-wrapper">
+        <div class="page-wrappers login-body" >
+            <div class="login-wrapper" style="background-image: url('assets/img/09.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             	<div class="container">
-                	<div class="loginbox">
+                	<div class="loginbox" style="border-radius:20px; opacity:0.9">
                         <div class="login-right">
 							<div class="login-right-wrap">
 								<h1>Admin Login Panel</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<p class="account-subtitle">Access our dashboard</p>
 								<p style="color:red;"><?php echo $error; ?></p>
 								<!-- Form -->
 								<form method="post">
-									<div class="form-group">
-										<input class="form-control" name="user" type="text" placeholder="User Name">
+									<div class="form-group" >
+										<input class="form-control" style="border-radius:20px;" name="user" type="text" placeholder="User Name">
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="password" name="pass" placeholder="Password">
+										<input class="form-control" type="password" style="border-radius:20px;" name="pass" placeholder="Password">
 									</div>
 									<div class="form-group">
-										<button class="btn btn-primary btn-block" name="login" type="submit">Login</button>
+										<button class="btn btn-primary btn-block" style="border-radius:20px;" name="login" type="submit">Login</button>
 									</div>
 								</form>
 								

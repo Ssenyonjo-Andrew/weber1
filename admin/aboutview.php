@@ -46,14 +46,14 @@ if(!isset($_SESSION['auser']))
 			<!-- /Sidebar -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
+            <div class="page-wrapper" style="background-image: url('assets/img/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
                 <div class="content container-fluid">
 
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">View About</h3>
+								<!-- <h3 class="page-title">View About</h3> -->
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">View About</li>
@@ -65,8 +65,8 @@ if(!isset($_SESSION['auser']))
 					
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-header">
+							<div class="card" style=' border-radius:20px; opacity:0.9'>
+								<div class="card-header" style=' border-radius:20px'>
 									<h4 class="card-title">List Of About</h4>
 									<?php 
 											if(isset($_GET['msg']))	
@@ -101,8 +101,8 @@ if(!isset($_SESSION['auser']))
 													<td><?php echo $row['1']; ?></td>
 													<td><?php echo $row['2']; ?></td>
 													<td><img src="upload/<?php echo $row['3']; ?>" height="200px" width="200px"></td>
-													<td><a href="aboutedit.php?id=<?php echo $row['0']; ?>"><button class="btn btn-info">Edit</button></a>
-													<a href="aboutdelete.php?id=<?php echo $row['0']; ?>"><button class="btn btn-danger">Delete</button></a></td>
+													<td><a href="aboutedit.php?id=<?php echo $row['0']; ?>"><button class="btn btn-info" style=' border-radius:20px'>Edit</button></a>
+													<a href="aboutdelete.php?id=<?php echo $row['0']; ?>"><button class="btn" style=' border-radius:20px; background-color:orange'>Delete</button></a></td>
 												</tr>
 											</tbody>
 												<?php

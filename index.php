@@ -61,18 +61,18 @@ include("config.php");
         <!--	Header end  -->
 		
         <!--	Banner Start   -->
-        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/banner/rshmpg.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/08.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-12">
                         <div class="text-white">
-                            <h1 class="mb-4"><span class="text-success">FUTURE</span><br>
+                            <h1 class="mb-4" style="color:white"><span>FUTURE</span><br>
                             BUILT WITH CARE..</h1>
                             <form method="post" action="propertygrid.php">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
-                                            <select class="form-control" name="type">
+                                            <select class="form-control" name="type" style=" border-radius: 30px ">
                                                 <option value="">Select Type</option>
 												<option value="apartment">Apartments</option>
 												<option value="flat">Flats</option>
@@ -83,8 +83,8 @@ include("config.php");
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-2">
-                                        <div class="form-group">
-                                            <select class="form-control" name="stype">
+                                        <div class="form-group" >
+                                            <select class="form-control" name="stype" style=" border-radius: 30px ">
                                                 <option value="">Select Status</option>
 												<option value="rent">Rent</option>
 												<option value="sale">Sale</option>
@@ -100,12 +100,12 @@ include("config.php");
                                     </div>
                                     <div class="col-md-8 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="city" placeholder="Enter City" required>
+                                            <input type="text" class="form-control" name="city" style=" border-radius: 30px " placeholder="Enter City" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-lg-2">
                                         <div class="form-group">
-                                            <button type="submit" name="filter" class="btn btn-success w-100">Search Property</button>
+                                            <button type="submit" name="filter" class="btn  w-100" style="background-color: orange; border-radius: 30px ">Search Property</button>
                                         </div>
                                     </div>
                                 </div>
@@ -119,39 +119,39 @@ include("config.php");
         
         <!--	Text Block One
 		======================================================-->
-        <div class="full-row bg-gray">
+        <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">What We Do</h2></div>
+                        <h2 class="  text-center mb-5 double-down-line" style="color:black">What We Do</h2></div>
                 </div>
-                <div class="text-box-one">
+                <div class="text-box-one" >
                     <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
+                        <div class="col-lg-3 col-md-6" >
+                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s" style=" background-color:rgb(247, 246, 248); border-radius: 20px "> 
 								
-                                <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Selling Service</a></h5>
+                                <h5 class=" hover-text-success py-3 m-0"><a href="property.php">Selling Service</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
+                            <div class="p-4 text-center  hover-shadow rounded mb-4 transation-3s" style=" background-color:rgb(246, 245, 248); border-radius: 20px"> 
 								
-                                <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Rental Service</a></h5>
+                                <h5 class=" hover-text-success py-3 m-0"><a href="property.php">Rental Service</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
+                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s" style=" background-color:rgb(248, 242, 255); border-radius: 20px"> 
 								
-                                <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Property Listing</a></h5>
+                                <h5 class=" hover-text-success py-3 m-0"><a href="property.php">Property Listing</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
+                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s" style=" background-color:rgb(247, 239, 255); border-radius: 20px"> 
 								
-                                <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Legal Investment</a></h5>
+                                <h5 class=" hover-text-success py-3 m-0"><a href="property.php">Legal Investment</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
@@ -162,11 +162,11 @@ include("config.php");
 		<!-----  Our Services  ---->
 		
         <!--	Recent Properties  -->
-        <div class="full-row">
+        <div class="full-row" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Property</h2>
+                        <h2 class="  text-center mb-4 double-down-line" style="color:black">Recent Property</h2>
                     </div>
                     <!--- <div class="col-md-6">
                         <ul class="nav property-btn float-right" id="pills-tab" role="tablist">
@@ -188,14 +188,14 @@ include("config.php");
 								
                                     <div class="col-md-6 col-lg-4">
                                         <div class="featured-thumb hover-zoomer mb-4">
-                                            <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
-                                                <div class="featured bg-success text-white">New</div>
-                                                <div class="sale bg-success text-white text-capitalize">For <?php echo $row['4'];?></div>
-                                                <div class="price text-primary"><b>Shs<?php echo $row['6'];?> </b><span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
+                                            <div class="overlay-black overflow-hidden position-relative " style=" border-radius:20px"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                                <div class="featured  text-white" style=" background-color: blue">New</div>
+                                                <div class="sale  text-white text-capitalize" style=" background-color: blue">For <?php echo $row['4'];?></div>
+                                                <div class="price" style="color: orange"><b>Shs<?php echo $row['6'];?> </b><span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
                                             </div>
-                                            <div class="featured-thumb-data shadow-one">
+                                            <div class="featured-thumb-data shadow-one" style=" border-radius:20px; opacity:.9">
                                                 <div class="p-3">
-                                                    <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
+                                                    <h5 class=" hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                                     <span class="location text-capitalize"><?php echo $row['7'];?></span> </div>
                                                 <!-- <div class="bg-gray quantity px-4 pt-4">
                                                     <ul>
@@ -209,7 +209,7 @@ include("config.php");
                                                 </div> -->
                                                 <div class="p-4 d-inline-block w-100">
                                                     <div class="float-left text-capitalize">By : <?php echo $row['uname'];?></div>
-<div class="float-right"><?php echo date('d-m-Y', strtotime($row['date']));?></div> 
+                                                    <div class="float-right"><?php echo date('d-m-Y', strtotime($row['date']));?></div> 
                                                 </div>
                                             </div>
                                         </div>
@@ -229,12 +229,12 @@ include("config.php");
 		<!--	Recent Properties  -->
         
         <!--	Why Choose Us -->
-        <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('images/01.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="living-list pr-4">
-                            <h3 class="pb-4 mb-3 text-white">Why Choose Us</h3>
+        <div class="full-row living bg-one overlay-secondary-half " style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-md-12 col-lg-6" >
+                        <div class="living-list pr-4" >
+                            <h3 class="pb-4 mb-3 text-white double-down-line-left" >Why Choose Us</h3>
                             <ul>
                                 <li class="mb-4 text-white d-flex"> 
 									
@@ -270,31 +270,31 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">How It Works</h2>
+                        <h2 class="  text-center mb-5 double-down-line" style="color:black">How It Works</h2>
                         </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="icon-thumb-one text-center mb-5">
-                            <div class="bg-success text-white rounded-circle position-absolute z-index-9">1</div>
+                            <div class=" text-white rounded-circle position-absolute z-index-9">1</div>
                             <div class="left-arrow"></div>
-                            <h5 class="text-secondary mt-5 mb-4">Discussion</h5>
+                            <h5 class=" mt-5 mb-4">Discussion</h5>
                             <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-thumb-one text-center mb-5">
-                            <div class="bg-success text-white rounded-circle position-absolute z-index-9">2</div>
+                            <div class=" text-white rounded-circle position-absolute z-index-9">2</div>
                             <div class="left-arrow"></div>
-                            <h5 class="text-secondary mt-5 mb-4">Files Review</h5>
+                            <h5 class=" mt-5 mb-4">Files Review</h5>
                             <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-thumb-one text-center mb-5">
-                            <div class="bg-success text-white rounded-circle position-absolute z-index-9">3</div>
+                            <div class=" text-white rounded-circle position-absolute z-index-9">3</div>
                             <div></div>
-                            <h5 class="text-secondary mt-5 mb-4">Acquire</h5>
+                            <h5 class=" mt-5 mb-4">Acquire</h5>
                             <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
                         </div>
                     </div>
@@ -306,7 +306,7 @@ include("config.php");
         
         <!--	Achievement
         ============================================================-->
-        <div class="full-row overlay-secondary" style="background-image: url('images/breadcromb.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="full-row overlay-secondary" style="background-image: url('images/08.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="fact-counter">
                     <div class="row">
@@ -373,16 +373,16 @@ include("config.php");
         </div>
         
         <!--	Popular Place -->
-        <div class="full-row bg-gray">
+        <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Places</h2></div>
+                        <h2 class=" text-center mb-5 double-down-line" style="color:black">Popular Places</h2></div>
                 </div>
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/1.jpg" alt="">
+                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9" style=" border-radius:30px"> <img src="images/thumbnail4/1.jpg"  alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
 									<?php
 										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Kawuga'");
@@ -397,7 +397,7 @@ include("config.php");
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/2.jpg" alt="">
+                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9" style=" border-radius:30px"> <img src="images/thumbnail4/2.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
 									<?php
 										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Mityana'");
@@ -412,7 +412,7 @@ include("config.php");
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/3.jpg" alt="">
+                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9" style=" border-radius:30px"> <img src="images/thumbnail4/3.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
                                     <?php
 										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Floson'");
@@ -427,7 +427,7 @@ include("config.php");
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/4.jpg" alt="">
+                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9" style=" border-radius:30px"> <img src="images/thumbnail4/4.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
                                     <?php
 										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Ulmore'");
@@ -454,8 +454,8 @@ include("config.php");
 					<div class="col-lg-12">
 						<div class="content-sidebar p-4">
 							<div class="mb-3 col-lg-12">
-								<h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonial</h4>
-									<div class="recent-review owl-carousel owl-dots-gray owl-dots-hover-success">
+								<h4 class=" text-center pb-4 mb-4 double-down-line" style="color:black;  ">Testimonial</h4>
+									<div class="recent-review owl-carousel owl-dots-gray owl-dots-hover-success" >
 									
 										<?php
 													
@@ -463,12 +463,11 @@ include("config.php");
 												while($row=mysqli_fetch_array($query))
 													{
 										?>
-										<div class="item">
-											<div class="p-4 bg-success down-angle-white position-relative">
-												<p class="text-white"><?php echo $row['2']; ?>.</p>
+										<div class="item" >
+											<div class="p-4 position-relative" style=" border-radius:20px; background-color:purple; background-image: url(images/03.jpg); image-position:cover; opacity:.9">
+												<p  style="color:black"><?php echo $row['2']; ?>.</p>
 											</div>
-											<div class="p-2 mt-4">
-												<span class="text-success d-table text-capitalize"><?php echo $row['uname']; ?></span> <span class="text-capitalize"><?php echo $row['utype']; ?></span>
+												<span class=" d-table text-capitalize"><?php echo $row['uname']; ?></span> <span class="text-capitalize"><?php echo $row['utype']; ?></span>
 											</div>
 										</div>
 										<?php }  ?>
@@ -489,7 +488,7 @@ include("config.php");
         
         
         <!-- Scroll to top --> 
-        <a href="#" class="bg-success text-white hover-text-secondary" id="scroll"></a> 
+        <a href="#" class=" text-white hover-text-secondary" id="scroll"></a> 
         <!-- End Scroll To top --> 
     </div>
 </div>

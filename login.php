@@ -18,7 +18,7 @@ if(isset($_REQUEST['login']))
 			   
 				$_SESSION['uid']=$row['uid'];
 				$_SESSION['uemail']=$email;
-				header("location:index.php");
+				header("location:index2.php");
 				
 		   }
 		   else{
@@ -59,7 +59,7 @@ if(isset($_REQUEST['login']))
 <link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <!--	Title
 	=========================================================-->
 <title>Real Estate PHP</title>
@@ -106,11 +106,11 @@ if(isset($_REQUEST['login']))
 		 
 		 
 		 
-        <div class="page-wrappers login-body full-row bg-gray">
+        <div class="page-wrappers login-body  full-row bg-gray"  style="background-image: url('images/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="login-wrapper">
-            	<div class="container">
+            	<div class="container" >
                 	<div class="loginbox">
-                        <div class="login-right">
+                        <div class="login-right" style="border-radius:20px">
 							<div class="login-right-wrap">
 								<h1>Login</h1>
 								<p class="account-subtitle">Access to our dashboard</p>
@@ -118,13 +118,13 @@ if(isset($_REQUEST['login']))
 								<!-- Form -->
 								<form method="post">
 									<div class="form-group">
-										<input type="email"  name="email" class="form-control" placeholder="Your Email*">
+										<input type="email"  name="email" class="form-control" placeholder="Your Email*" style="border-radius:30px">
 									</div>
 									<div class="form-group">
-										<input type="password" name="pass"  class="form-control" placeholder="Your Password">
+										<input type="password" name="pass"  class="form-control" placeholder="Your Password" style="border-radius:30px">
 									</div>
 									
-										<button class="btn btn-success" name="login" value="Login" type="submit">Login</button>
+										<button class="btn" name="login" value="Login" type="submit" style="border-radius:30px; background-color:orange">Login</button >
 									
 								</form>
 								
@@ -132,7 +132,7 @@ if(isset($_REQUEST['login']))
 									<span class="or-line"></span>
 									<span class="span-or">or</span>
 								</div>
-								<!-- FOR MORE PROJECTS visit: codeastro.com -->
+								
 								<!-- Social Login -->
 								<!-- <div class="social-login">
 									<span>Login with</span>
@@ -146,6 +146,15 @@ if(isset($_REQUEST['login']))
 								<div class="text-center dont-have">Don't have an account? <a href="register.php">Register</a></div>
 								
 							</div>
+							
+                        </div>
+						<div class="login-left" style="border-radius:20px">
+							<div class="login-left-wrap">
+								<h1>Welcome <br> Back,,Please login</h1>
+								
+								
+							</div>
+							
                         </div>
                     </div>
                 </div>
@@ -154,7 +163,7 @@ if(isset($_REQUEST['login']))
 	<!--	login  -->
         
         
-        <!--	Footer   start--><!-- FOR MORE PROJECTS visit: codeastro.com -->
+        <!--	Footer   start-->
 		<?php include("include/footer.php");?>
 		<!--	Footer   start-->
         

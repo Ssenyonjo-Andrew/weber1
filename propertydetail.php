@@ -72,8 +72,8 @@ include("config.php");
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Property Details</li>
+                                <li class="breadcrumb-item text-white"><a href="index.php">Home</a></li>
+                                <li class="breadcrumb-item " style="color:white">Property Details</li>
                             </ol>
                         </nav>
                     </div>
@@ -83,7 +83,7 @@ include("config.php");
          <!--	Banner   --->
 
 		
-        <div class="full-row">
+        <div class="full-row" style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat">
             <div class="container">
                 <div class="row">
 				
@@ -94,10 +94,10 @@ include("config.php");
 						{
 					  ?>
 				  
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" >
 
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="row" >
+                            <div class="col-md-12" >
                                 <div id="single-property" style="width:1200px; height:700px; margin:30px auto 50px;"> 
                                     <!-- Slide 1-->
                                     <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['18'];?>" class="ls-bg" alt="" /> </div>
@@ -116,18 +116,18 @@ include("config.php");
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-4">
+                        <div class="row mb-4" style="background-color:white; padding:10px; border-radius:20px"> 
                             <div class="col-md-6">
-                                <div class="bg-success d-table px-3 py-2 rounded text-white text-capitalize">For <?php echo $row['4'];?></div>
-                                <h5 class="mt-2 text-secondary text-capitalize"><?php echo $row['1'];?></h5>
-                                <span class="mb-sm-20 d-block text-capitalize"><i class="fas fa-map-marker-alt text-success font-12"></i> &nbsp;<?php echo $row['7'];?></span>
+                                <div class=" d-table  text-capitalize" style="border-radius:10px; padding:5px; background-color:orange; color:black">For <?php echo $row['4'];?></div>
+                                <h5 class="mt-2  text-capitalize" style="color:blue"><?php echo $row['1'];?></h5>
+                                <span class="mb-sm-20 d-block text-capitalize" style="color:black"><i class="fas fa-map-marker-alt  font-12" style="color:black"></i> &nbsp;<?php echo $row['7'];?></span>
 							</div>
                             <div class="col-md-6">
-                                <div class="text-success text-left h5 my-2 text-md-right">Shs<?php echo $row['6'];?></div>
+                                <div class=" text-left h5 my-2 text-md-right" style="color:orange">Shs<?php echo $row['6'];?></div>
                                 <div class="text-left text-md-right">Price</div>
                             </div>
                         </div>
-                        <div class="property-details">
+                        <div class="property-details" style="background-color:white; padding:10px; border-radius:20px">
                             <!-- <div class="bg-gray property-quantity px-4 pt-4 w-100">
                                 <ul>
                                     <li><span class="text-secondary"><?php echo $row['12'];?></span> Sqft</li>
@@ -138,11 +138,11 @@ include("config.php");
                                     <li><span class="text-secondary"><?php echo $row['9'];?></span> Kitchen</li>
                                 </ul>
                             </div> -->
-                            <h4 class="text-secondary my-4">Description</h4>
+                            <h4 class=" my-4" style="color:black">Description</h4>
                             <p><?php echo $row['2'];?></p>
                             
-                            <h5 class="mt-5 mb-4 text-secondary">Property Summary</h5>
-                            <div  class="table-striped font-14 pb-2">
+                            <h5 class="mt-5 mb-4 text" style="color:black">Property Summary</h5>
+                            <div  class="table-striped font-14 pb-2" style="color:black">
                                 <table class="w-100">
                                     <tbody>
                                         <tr>
@@ -187,19 +187,19 @@ include("config.php");
                                     <img src="admin/property/<?php echo $row['27'];?>" alt="Not Available"> </div>
                             </div> -->
 
-                            <h5 class="mt-5 mb-4 text-secondary double-down-line-left position-relative">Contact Agent</h5>
+                            <h5 class="mt-5 mb-4 position-relative" style="color:black">Contact Agent</h5>
                             <div class="agent-contact pt-60">
                                 <div class="row">
-                                    <div class="col-sm-4 col-lg-3"> <img src="admin/user/<?php echo $row['uimage']; ?>" alt="" height="200" width="170"> </div>
+                                    <div class="col-sm-4 col-lg-3"> <img src="admin/user/<?php echo $row['uimage']; ?>" alt="" height="150" width="100" style="border-radius:50%"> </div>
                                     <div class="col-sm-8 col-lg-9">
                                         <div class="agent-data text-ordinary mt-sm-20">
-                                            <h6 class="text-success text-capitalize"><?php echo $row['uname'];?></h6>
+                                            <h6 class=" text-capitalize" style="color:blue"><?php echo $row['uname'];?></h6>
                                             <ul class="mb-3">
                                                 <li><?php echo $row['uphone'];?></li>
                                                 <li><?php echo $row['uemail'];?></li>
                                             </ul>
                                             
-                                            <div class="mt-3 text-secondary hover-text-success">
+                                            <div class="mt-3  hover-text-success" style="color:black">
                                                 <ul>
                                                     <li class="float-left mr-3"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                                     <li class="float-left mr-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -250,35 +250,35 @@ include("config.php");
                                 </div>
                             </div>
                         </form> -->
-                        <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
+                        <h4 class=" position-relative pb-4 my-4" style="color:black">Instalment Calculator</h4>
                         <form class="d-inline-block w-100" action="calc.php" method="post">
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">$</div>
+                                <div class="input-group-prepend" >
+                                    <div class="input-group-text" style="border-radius:30px; color:black">Shs</div>
                                 </div>
-                                <input type="text" class="form-control" name="amount" placeholder="Property Price">
+                                <input type="text" class="form-control" name="amount" placeholder="Property Price" style="border-radius:30px">
                             </div>
                             <label class="sr-only">Month</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                    <div class="input-group-text" style="border-radius:30px; color:black"><i class="far fa-calendar-alt"></i></div>
                                 </div>
-                                <input type="text" class="form-control" name="month" placeholder="Duration Year">
+                                <input type="text" class="form-control" name="month" placeholder="Duration Year" style="border-radius:30px">
                             </div>
                             <label class="sr-only">Interest Rate</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">%</div>
+                                    <div class="input-group-text" style="border-radius:30px; color:blackcolor:black">%</div>
                                 </div>
-                                <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
+                                <input type="text" class="form-control" name="interest" placeholder="Interest Rate" style="border-radius:30px; ">
                             </div>
-                            <button type="submit" value="submit" name="calc" class="btn btn-danger mt-4">Calclute Instalment</button>
+                            <button type="submit" value="submit" name="calc" class="btn mt-4" style="border-radius:30px; background-color:orange">Calclute Instalment</button>
                         </form>
                         
 
-                        <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
+                        <div class="sidebar-widget mt-5" style="background-color:white; padding:10px; border-radius:20px">
+                            <h4 class=" position-relative pb-4 mb-4" style="color:black">Recently Added Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 
@@ -287,8 +287,8 @@ include("config.php");
 										{
 								?>
                                 <li> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
-                                    <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['7'];?></span>
+                                    <h6 class="text-capitalize" style="color:blue"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
+                                    <span class="font-14" style="color:black"><i class="fas fa-map-marker-alt icon-success icon-small" style="color:black"></i> <?php echo $row['7'];?></span>
                                     
                                 </li>
                                 <?php } ?>

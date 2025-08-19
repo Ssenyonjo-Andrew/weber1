@@ -76,14 +76,14 @@ if(isset($_POST['insert']))
 			<!-- /Sidebar -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
+            <div class="page-wrapper" style="background-image: url('assets/img/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
                 <div class="content container-fluid">
 
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">State</h3>
+								<!-- <h3 class="page-title">State</h3> -->
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">State</li>
@@ -96,8 +96,8 @@ if(isset($_POST['insert']))
 				<!-- city add section --> 
 					<div class="row">
 						<div class="col-md-12">
-							<div class="card">
-								<div class="card-header">
+							<div class="card" style=' border-radius:20px; opacity:0.9'>
+								<div class="card-header" style=' border-radius:20px'>
 									<h1 class="card-title">Add City</h1>
 									<?php echo $error;?>
 									<?php echo $msg;?>
@@ -135,7 +135,7 @@ if(isset($_POST['insert']))
 												</div>
 											</div>
 											<div class="text-left">
-												<input type="submit" class="btn btn-primary"  value="Submit" name="insert" style="margin-left:200px;">
+												<input type="submit" class="btn"  style=' background-color:orange; border-radius:20px' value="Submit" name="insert" style="margin-left:200px;">
 											</div>
 									</div>
 								</form>
@@ -147,8 +147,8 @@ if(isset($_POST['insert']))
 				<!----view city  --->
 				<div class="row">
 						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-header">
+							<div class="card" style=' border-radius:20px'>
+								<div class="card-header" style=' border-radius:20px'>
 									<h4 class="card-title">City List</h4>
 									
 								</div>
@@ -180,8 +180,8 @@ if(isset($_POST['insert']))
                                                     <td><?php echo $row['1']; ?></td>
 													<!-- <td><?php echo $row['2']; ?></td> -->
 													<td><?php echo $row['sname']; ?></td>
-													<td><a href="cityedit.php?id=<?php echo $row['0']; ?>"><button class="btn btn-info">Edit</button></a>
-                                                   <a href="citydelete.php?id=<?php echo $row['0']; ?>"><button class="btn btn-danger">Delete</button></a></td>
+													<td><a href="cityedit.php?id=<?php echo $row['0']; ?>"><button class="btn btn-info" style=' border-radius:20px'>Edit</button></a>
+                                                   <a href="citydelete.php?id=<?php echo $row['0']; ?>"><button class="btn" style=' background-color:orange; border-radius:20px'>Delete</button></a></td>
                                                 </tr>
                                                 <?php $cnt=$cnt+1; } ?>
 

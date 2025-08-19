@@ -46,7 +46,7 @@ if(isset($_REQUEST['reg']))
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -97,7 +97,7 @@ if(isset($_REQUEST['reg']))
     <div class="row"> 
         <!--	Header start  -->
 		<?php include("include/header.php");?>
-        <!--	Header end  --><!-- FOR MORE PROJECTS visit: codeastro.com -->
+        <!--	Header end  -->
         
         <!--	Banner   --->
         <!-- <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
@@ -121,11 +121,11 @@ if(isset($_REQUEST['reg']))
 		 
 		 
 		 
-        <div class="page-wrappers login-body full-row bg-gray">
+        <div class="page-wrappers login-body full-row bg-gray"  style="background-image: url('images/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="login-wrapper">
             	<div class="container">
-                	<div class="loginbox">
-                        <div class="login-right">
+                	<div class="loginbox" style="border-radius:30px">
+                        <div class="login-right" style="border-radius:20px">
 							<div class="login-right-wrap">
 								<h1>Register</h1>
 								<p class="account-subtitle">Access to our dashboard</p>
@@ -133,23 +133,23 @@ if(isset($_REQUEST['reg']))
 								<!-- Form -->
 								<form method="post" enctype="multipart/form-data">
 									<div class="form-group">
-										<input type="text"  name="name" class="form-control" placeholder="Your Name*">
+										<input type="text"  name="name" class="form-control" placeholder="Your Name*" style="border-radius:30px">
 									</div>
 									<div class="form-group">
-										<input type="email"  name="email" class="form-control" placeholder="Your Email*">
+										<input type="email"  name="email" class="form-control" placeholder="Your Email*" style="border-radius:30px">
 									</div>
 									<div class="form-group">
-										<input type="text"  name="phone" class="form-control" placeholder="Your Phone*" maxlength="10">
+										<input type="text"  name="phone" class="form-control" placeholder="Your Phone*" maxlength="10" style="border-radius:30px">
 									</div>
 									<div class="form-group">
-										<input type="password" name="pass"  class="form-control" placeholder="Your Password*">
+										<input type="password" name="pass"  class="form-control" placeholder="Your Password*" style="border-radius:30px">
 									</div>
 
 									 <div class="form-check-inline">
 									  <label class="form-check-label">
 										<input type="radio" class="form-check-input" name="utype" value="user" checked>User
 									  </label>
-									</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+									</div>
 									<div class="form-check-inline">
 									  <label class="form-check-label">
 										<input type="radio" class="form-check-input" name="utype" value="agent">Agent
@@ -163,10 +163,10 @@ if(isset($_REQUEST['reg']))
 									
 									<div class="form-group">
 										<label class="col-form-label"><b>User Image</b></label>
-										<input class="form-control" name="uimage" type="file">
+										<input class="form-control" name="uimage" type="file" style="border-radius:10px">
 									</div>
 									
-									<button class="btn btn-success" name="reg" value="Register" type="submit">Register</button>
+									<button class="btn" style="border-radius:30px; background-color:orange" name="reg" value="Register" type="submit">Register</button>
 									
 								</form>
 								
@@ -187,7 +187,15 @@ if(isset($_REQUEST['reg']))
 								
 								<div class="text-center dont-have">Already have an account? <a href="login.php">Login</a></div>
 								
-							</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+							</div>
+                        </div>
+						<div class="login-left" style="border-radius:20px">
+							<div class="login-left-wrap">
+								<h1>Welcome <br> Back,,Please login</h1>
+								
+								
+							</div>
+							
                         </div>
                     </div>
                 </div>
@@ -206,7 +214,7 @@ if(isset($_REQUEST['reg']))
     </div>
 </div>
 <!-- Wrapper End --> 
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <!--	Js Link
 ============================================================--> 
 <script src="js/jquery.min.js"></script> 

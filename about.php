@@ -25,7 +25,7 @@ include("config.php");
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
 <!-- Css Link -->
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -49,7 +49,7 @@ include("config.php");
 	  </div>
 	</div>
 </div> -->
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <div id="page-wrapper">
     <div class="row"> 
         <!--	Header start  -->
@@ -75,9 +75,9 @@ include("config.php");
             </div>
         </div> -->
          <!--	Banner   --->
-		 <!-- FOR MORE PROJECTS visit: codeastro.com -->
+		 
         <!--	About Our Company -->
-        <div class="full-row">
+        <div class="full-row" style="background-image: url('images/02.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat">
             <div class="container">
                 
 				
@@ -89,17 +89,17 @@ include("config.php");
 				?>
 				<div class="row">
                     <div class="col-md-12 col-lg-12">
-                        <h3 class="double-down-line-left text-secondary position-relative pb-4 mb-4"><?php echo $row['1'];?></h3>
+                        <h3 class=" text-center position-relative pb-4 mb-4" style="color:black"><?php echo $row['1'];?></h3>
                     </div>
                 </div>
                 <div class="row about-company">
                     <div class="col-md-12 col-lg-7">
-                        <div class="about-content">
+                        <div class="about-content" style="background-color:#ecf0f1; border-radius:20px; padding:10px">
                             <?php echo $row['2'];?>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-5 mt-5">
-                        <div class="about-img"> <img src="admin/upload/<?php echo $row['3'];?>" alt="about image"> </div>
+                    <div class="col-md-12 col-lg-5 mt-5" >
+                        <div class="about-img"> <img src="admin/upload/<?php echo $row['3'];?>" style="border-radius:20px" alt="about image"> </div>
                     </div>
                 </div>
 				
@@ -116,7 +116,7 @@ include("config.php");
         <!-- Scroll to top --> 
         <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a> 
         <!-- End Scroll To top --> 
-    </div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+    </div>
 </div>
 <!-- Wrapper End --> 
 

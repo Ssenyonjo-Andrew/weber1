@@ -75,8 +75,8 @@ if(!isset($_SESSION['uemail']))
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active"> Listed Property</li>
+                                <li class="breadcrumb-item text-white"><a href="index.php">Home</a></li>
+                                <li class="breadcrumb-item active" style="color:blue"> Listed Property</li>
                             </ol>
                         </nav>
                     </div>
@@ -87,17 +87,17 @@ if(!isset($_SESSION['uemail']))
 		 
 		 
 		<!--	Submit property   -->
-        <div class="full-row bg-gray">
-            <div class="container"><!-- FOR MORE PROJECTS visit: codeastro.com -->
+        <div class="full-row" style="background-image: url('images/03.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <div class="container">
                     <div class="row mb-5">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">Listed Property</h2>
+							<h2 class="text-secondary text-center">Listed Property</h2>
 							<?php 
 								if(isset($_GET['msg']))	
 								echo $_GET['msg'];	
 							?>
                         </div>
-					</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+					</div>
 					<table class="items-list col-lg-12 table-hover" style="border-collapse:inherit;">
                         <thead>
                              <tr  class="bg-dark">
@@ -110,7 +110,7 @@ if(!isset($_SESSION['uemail']))
                              </tr>
                         </thead>
                         <tbody>
-						<!-- FOR MORE PROJECTS visit: codeastro.com -->
+						
 							<?php 
 							$uid=$_SESSION['uid'];
 							$query=mysqli_query($con,"SELECT * FROM `property` WHERE uid='$uid'");
@@ -122,9 +122,9 @@ if(!isset($_SESSION['uemail']))
 									<img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
                                     <div class="property-info d-table">
                                         <h5 class="text-secondary text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                        <span class="font-14 text-capitalize"><i class="fas fa-map-marker-alt text-success font-13"></i>&nbsp; <?php echo $row['7'];?></span>
+                                        <span class="font-14 text-capitalize" style="color:orange"><i class="fas fa-map-marker-alt  font-13" style="color:blue"></i>&nbsp; <?php echo $row['7'];?></span>
                                         <div class="price mt-3">
-											<span class="text-success">$&nbsp;<?php echo $row['6'];?></span>
+											<span style="color:blue">Shs&nbsp;<?php echo $row['6'];?></span>
 										</div>
                                     </div>
 								</td>
@@ -136,7 +136,7 @@ if(!isset($_SESSION['uemail']))
 								<td><a class="btn btn-danger" href="submitpropertydelete.php?id=<?php echo $row['0'];?>">Delete</a></td> -->
                             </tr>
 							<?php } ?>
-							<!-- FOR MORE PROJECTS visit: codeastro.com -->
+							
                         </tbody>
                     </table>            
             </div>
@@ -152,7 +152,7 @@ if(!isset($_SESSION['uemail']))
         <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a> 
         <!-- End Scroll To top --> 
     </div>
-</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+</div>
 <!-- Wrapper End --> 
 
 <!--	Js Link

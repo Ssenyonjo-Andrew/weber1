@@ -44,7 +44,7 @@ if(!isset($_SESSION['auser']))
 							<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-02.jpg" width="31" alt="Admin"></span>
 						</a>
 						
-						<div class="dropdown-menu">
+						<div class="dropdown-menu" style='border-radius:20px; opacity:0.8'>
 							<div class="user-header">
 								<div class="avatar avatar-sm">
 									<img src="assets/img/profiles/avatar-02.jpg" alt="User Image" class="avatar-img rounded-circle">
@@ -71,7 +71,7 @@ if(!isset($_SESSION['auser']))
 			
 			
 						<!-- Sidebar -->
-            <div class="sidebar" id="sidebar">
+            <div class="sidebar" id="sidebar" style="background-color:black">
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
@@ -103,8 +103,8 @@ if(!isset($_SESSION['auser']))
 								<ul style="display: none;">
 									<li><a href="adminlist.php"> Admin </a></li>
 									<li><a href="userlist.php"> Users </a></li>
-									<li><a href="useragent.php"> Agent </a></li>
-									<li><a href="userbuilder.php"> Builder </a></li>
+									<li><a href="useragent.php"> Agents </a></li>
+									<li><a href="userbuilder.php"> Builders </a></li>
 								</ul>
 							</li>
 

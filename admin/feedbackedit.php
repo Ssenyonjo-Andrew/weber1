@@ -70,7 +70,7 @@ if(isset($_POST['update']))
 			<!-- /Sidebar -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
+            <div class="page-wrapper" style="background-image: url('assets/img/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 			
 				<div class="content container-fluid">
 
@@ -78,7 +78,7 @@ if(isset($_POST['update']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Feedback</h3>
+								<!-- <h3 class="page-title">Feedback</h3> -->
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Feedback</li>
@@ -90,8 +90,8 @@ if(isset($_POST['update']))
 					
 					<div class="row">
 						<div class="col-md-12">
-							<div class="card">
-								<div class="card-header">
+							<div class="card" style=' border-radius:20px; opacity:0.9'>
+								<div class="card-header" style=' border-radius:20px'>
 									<h2 class="card-title">Update Feedback</h2>
 								</div>
 								<?php 
@@ -125,7 +125,7 @@ if(isset($_POST['update']))
 											</div>
 										</div>
 										<div class="text-left">
-											<input type="submit" class="btn btn-primary"  value="Submit" name="update" style="margin-left:200px;">
+											<input type="submit" class="btn"  style=' border-radius:20px; background-color:orange' value="Submit" name="update" style="margin-left:200px;">
 										</div>
 									</form>
 									<?php } ?>

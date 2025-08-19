@@ -48,18 +48,18 @@ if(!isset($_SESSION['auser']))
 			<!-- /Header -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
+            <div class="page-wrapper" style="background-image: url('assets/img/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 			
                 <div class="content container-fluid">
 					
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
-							<div class="col-sm-12">
-								<h3 class="page-title">Welcome Admin!</h3>
+							<div class="col-sm-6">
+								<!-- <h3 class="page-title">Welcome Admin!</h3> -->
 								<p></p>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item active">Dashboard</li>
+									<!-- <li class="breadcrumb-item active" >Dashboard</li> -->
 								</ul>
 							</div>
 						</div>
@@ -68,15 +68,15 @@ if(!isset($_SESSION['auser']))
 
 					<div class="row">
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
-									<div class="dash-widget-header">
+									<div class="dash-widget-header" >
 										<span class="dash-widget-icon bg-primary">
 											<i class="fe fe-users"></i>
 										</span>
 										
 									</div>
-									<div class="dash-widget-info">
+									<div class="dash-widget-info" >
 										
 										<h3><?php $sql = "SELECT * FROM user WHERE utype = 'user'";
 										$query = $con->query($sql);
@@ -91,7 +91,7 @@ if(!isset($_SESSION['auser']))
 							</div>
 						</div>
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-success">
@@ -114,7 +114,7 @@ if(!isset($_SESSION['auser']))
 							</div>
 						</div>
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-danger">
@@ -137,7 +137,7 @@ if(!isset($_SESSION['auser']))
 							</div>
 						</div>
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">
@@ -164,7 +164,7 @@ if(!isset($_SESSION['auser']))
 
 					<div class="row">
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-warning">
@@ -188,7 +188,7 @@ if(!isset($_SESSION['auser']))
 						</div>
 
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">
@@ -212,7 +212,7 @@ if(!isset($_SESSION['auser']))
 						</div>
 
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-secondary">
@@ -236,7 +236,7 @@ if(!isset($_SESSION['auser']))
 						</div>
 
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-primary">
@@ -262,7 +262,7 @@ if(!isset($_SESSION['auser']))
 
 					<div class="row">
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-success">
@@ -286,7 +286,7 @@ if(!isset($_SESSION['auser']))
 						</div>
 
 						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
+							<div class="card" style="border-radius:20px; opacity:0.9">
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">

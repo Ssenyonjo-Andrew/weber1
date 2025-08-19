@@ -1,4 +1,4 @@
-<footer class="full-row bg-secondary p-0">
+<footer class="full-row  p-0" style=" border-radius:30px; background-color:black">
             <div class="container">
                 <div  class="row">
                     <div class="col-lg-12">
@@ -6,7 +6,7 @@
                             <div class="row">
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
-                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/restatelg_white.jpg" height=200 width=200 alt="image"></a> </div>
+                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/restatelg_white.jpg" style="border-radius:30px" height=200 width=200 alt="image"></a> </div>
                                         <p class="pb-20 text-white">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis dignissim nam.</p>
 										
                                         </div>
@@ -15,18 +15,18 @@
                                     <div class="row">
                                         <div class="col-md-4 col-lg-4">
                                             <div class="footer-widget footer-nav mb-4">
-                                                <h4 class="widget-title text-white double-down-line-left position-relative">Support</h4>
+                                                <h4 class="widget-title text-white  position-relative">Support</h4>
                                                 <ul class="hover-text-primary">
                                                     <li><a href="index.php" class="text-white">Home</a></li>
                                                     <li><a href="property.php" class="text-white">Calculate Price Instalments</a></li>
-                                                    <li><a href="#" class="text-white">Frequenlty Asked Question</a></li>
+                                                    <li><a href="#" class="text-white">Frequently Asked Question</a></li>
                                                     <li><a href="contact.php" class="text-white">Contact</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-lg-4">
                                             <div class="footer-widget footer-nav mb-4">
-                                                <h4 class="widget-title text-white double-down-line-left position-relative">Quick Links</h4>
+                                                <h4 class="widget-title text-white  position-relative">Quick Links</h4>
                                                 <ul class="hover-text-primary">
                                                     <li><a href="about.php" class="text-white">About Us</a></li>
                                                     <li><a href="login.php" class="text-white">Access property</a></li>
@@ -37,7 +37,7 @@
                                         </div>
                                         <div class="col-md-4 col-lg-4">
                                             <div class="footer-widget">
-                                                <h4 class="widget-title text-white double-down-line-left position-relative">Contact Us</h4>
+                                                <h4 class="widget-title text-white  position-relative">Contact Us</h4>
                                                 <ul class="text-white">
                                                     <li class="hover-text-primary">27 Ingram Street, Dayton</li>
                                                     <li class="hover-text-primary">+256-756-408-028</li>

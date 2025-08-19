@@ -26,10 +26,10 @@ if(isset($_POST['insert']))
 		$sql="INSERT INTO feedback (uid,fdescription,status) VALUES ('$uid','$content','0')";
 		   $result=mysqli_query($con, $sql);
 		   if($result){
-			   $msg = "<p class='alert alert-success'>Feedback Send Successfully</p> ";
+			   $msg = "<p class='alert alert-success'>Feedback Sent Successfully</p> ";
 		   }
 		   else{
-			   $error = "<p class='alert alert-warning'>Feedback Not Send Successfully</p> ";
+			   $error = "<p class='alert alert-warning'>Feedback Not Sent Successfully</p> ";
 		   }
 	}else{
 		$error = "<p class='alert alert-warning'>Please Fill all the fields</p>";
@@ -101,7 +101,7 @@ if(isset($_POST['insert']))
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item text-white"><a href="index.php">Home</a></li>
                                 <li class="breadcrumb-item active">Profile</li>
                             </ol>
                         </nav>
@@ -113,27 +113,27 @@ if(isset($_POST['insert']))
 		 
 		 
 		<!--	Submit property   -->
-        <div class="full-row">
+        <div class="full-row" style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat">
             <div class="container">
                     <div class="row">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">Profile</h2>
+							<h2 class=" text-center" style="color:black">Profile</h2>
                         </div>
 					</div>
-                <div class="dashboard-personal-info p-5 bg-white">
+                <div class="dashboard-personal-info p-5 bg-white" style="border-radius:30px ; opacity:0.9">
                     <form action="#" method="post">
-                        <h5 class="text-secondary border-bottom-on-white pb-3 mb-4">Feedback Form</h5>
+                        <h5 class=" border-bottom-on-white pb-3 mb-4" style="color:black">Feedback Form</h5>
 						<?php echo $msg; ?><?php echo $error; ?>
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
                                 <div class="form-group">
                                     <label for="user-id">Full Name</label>
-                                    <input type="text" name="name" class="form-control" placeholder="Enter Full Name">
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Full Name" style="border-radius:30px">
                                 </div>                
                                 
                                 <div class="form-group">
                                     <label for="phone">Contact Number</label>
-                                    <input type="number" name="phone"  class="form-control" placeholder="Enter Phone" maxlength="10">
+                                    <input type="number" name="phone"  class="form-control" placeholder="Enter Phone" maxlength="10" style="border-radius:30px">
                                 </div>
 
                                 <!-- <div class="form-group">
@@ -143,9 +143,9 @@ if(isset($_POST['insert']))
 
                                 <div class="form-group">
                                     <label for="about-me">Your Feedback</label>
-                                    <textarea class="form-control" name="content" rows="7" placeholder="Enter Text Here...."></textarea>
+                                    <textarea class="form-control" name="content" rows="7" placeholder="Enter Text Here...." style="border-radius:30px"></textarea>
                                 </div>
-                                <input type="submit" class="btn btn-info mb-4" name="insert" value="Send Feedback">
+                                <input type="submit" class="btn btn-info mb-4" name="insert" value="Send Feedback" style="border-radius:30px">
                             </div>
 							</form>
                             <div class="col-lg-1"></div>
@@ -156,7 +156,7 @@ if(isset($_POST['insert']))
 									while($row=mysqli_fetch_array($query))
 									{
 								?>
-                                <div class="user-info mt-md-50"> <img src="admin/user/<?php echo $row['6'];?>" alt="userimage">
+                                <div class="user-info mt-md-50" > <img src="admin/user/<?php echo $row['6'];?>" alt="userimage" style="border-radius:20%">
                                     <div class="mb-4 mt-3">
                                         
                                     </div>

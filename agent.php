@@ -4,7 +4,7 @@ session_cache_limiter(false);
 session_start();
 include("config.php");
 ///code								
-?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +23,7 @@ include("config.php");
 	========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <!--	Css Link
 	========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -82,23 +82,23 @@ include("config.php");
          <!--	Banner   --->
 
 
-        <div class="full-row">
+        <div class="full-row" style="background-image: url('images/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
 				<div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Agent</h2>
+                        <h2 class="  text-center mb-5" style="color:black">Agents</h2>
                         </div>
                 </div>
-                <div class="row">
+                <div class="row" >
                     <?php 
 							$query=mysqli_query($con,"SELECT * FROM user WHERE utype='agent'");
 								while($row=mysqli_fetch_array($query))
 								{
                             ?>
                             
-                    <div class="col-md-6 col-lg-4">
-                        <div class="hover-zoomer bg-white shadow-one mb-4">
-                            <div class="overflow-hidden"> <img src="admin/user/<?php echo $row['6'];?>" alt="aimage"> </div>
+                    <div class="col-md-6 col-lg-4" >
+                        <div class="hover-zoomer bg-white shadow-one mb-4" style="border-radius:30px">
+                            <div class="overflow-hidden" style="border-radius:30px"> <img src="admin/user/<?php echo $row['6'];?>" alt="aimage"> </div>
                             <div class="py-3 text-center">
                                 <h5 class="text-secondary hover-text-success"><a href="#"><?php echo $row['1'];?></a></h5>
                                 <span>hollandcontractors-Agent</span> </div>

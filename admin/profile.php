@@ -46,14 +46,14 @@ if(!isset($_SESSION['auser']))
 			<!-- /Header -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
+            <div class="page-wrapper" style="background-image: url('assets/img/05.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
                 <div class="content container-fluid">
 					
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Profile</h3>
+								<!-- <h3 class="page-title">Profile</h3> -->
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Profile</li>
@@ -72,8 +72,8 @@ if(!isset($_SESSION['auser']))
 						while($row=mysqli_fetch_array($result))
 						{
 						?>
-						<div class="col-md-12">
-							<div class="profile-header">
+						<div class="col-md-12" style=' border-radius:20px; opacity:0.9'>
+							<div class="profile-header" style=' border-radius:20px'>
 								<div class="row align-items-center">
 									<div class="col-auto profile-image">
 										<a href="#">
@@ -90,10 +90,10 @@ if(!isset($_SESSION['auser']))
 
 								</div>
 							</div>
-							<div class="profile-menu">
+							<div class="profile-menu" style=' border-radius:20px; opacity:0.9'>
 								<ul class="nav nav-tabs nav-tabs-solid">
 									<li class="nav-item">
-										<a class="nav-link active" data-toggle="tab" href="#per_details_tab">About</a>
+										<a class="nav-link active" style=' border-radius:20px' data-toggle="tab" href="#per_details_tab">About</a>
 									</li>
 								<!--	<li class="nav-item">
 										<a class="nav-link" data-toggle="tab" href="#password_tab">Password</a>
@@ -108,7 +108,7 @@ if(!isset($_SESSION['auser']))
 									<!-- Personal Details -->
 									<div class="row">
 										<div class="col-lg-9">
-											<div class="card">
+											<div class="card" style=' border-radius:20px'>
 												<div class="card-body">
 													<div class="row">
 														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Name</p>
@@ -134,13 +134,13 @@ if(!isset($_SESSION['auser']))
 										<div class="col-lg-3">
 											
 											<!-- Account Status -->
-											<div class="card">
+											<div class="card" style=' border-radius:20px; opacity:0.9'>
 												<div class="card-body">
 													<h5 class="card-title d-flex justify-content-between">
 														<span>Account Status</span>
 														
 													</h5>
-													<button class="btn btn-success" type="button"><i class="fe fe-check-verified"></i> Active</button>
+													<button class="btn" style=' border-radius:20px; background-color:orange' type="button"><i class="fe fe-check-verified"></i> Active</button>
 												</div>
 											</div>
 											<!-- /Account Status -->
