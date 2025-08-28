@@ -38,7 +38,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -58,7 +58,7 @@ include("config.php");
     <div class="row"> 
         <!--	Header One -->
         <!--	Header start  -->
-		<?php include("include/header.php");?>
+		<?php include("include/header2.php");?>
         <!--	Header end  -->
 
         <!--	Banner   --->

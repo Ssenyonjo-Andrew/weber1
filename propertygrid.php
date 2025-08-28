@@ -41,7 +41,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -167,7 +167,7 @@ include("config.php");
 					
                     <div class="col-lg-4">
                         <div class="sidebar-widget">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
+                            <h4 class="double-down-line-left  position-relative pb-4 my-4">Instalment Calculator</h4>
 						<form class="d-inline-block w-100" action="calc.php" method="post">
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
@@ -190,21 +190,21 @@ include("config.php");
                                 </div>
                                 <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
                             </div>
-                            <button type="submit" value="submit" name="calc" class="btn btn-danger mt-4">Calculate Instalment</button>
+                            <button type="submit" value="submit" name="calc" class="btn mt-4" style="background-color:orange; border-radius:20px">Calculate Instalment</button>
                         </form>
                         </div>
                         
                         <div class="sidebar-widget mt-5">
-                            <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
+                            <h4 class="double-down-line-left  position-relative pb-4 mb-4">Recently Added Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 10");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>
                                 <li> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
-                                    <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
+                                    <h6 class=" hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
                                     <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['7'];?></span>
                                     
                                 </li>

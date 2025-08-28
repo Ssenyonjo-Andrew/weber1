@@ -37,7 +37,7 @@ if(isset($_POST['insert']))
 
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
         <title>Ventura - Data Tables</title>
 		
 		<!-- Favicon -->
@@ -154,7 +154,7 @@ if(isset($_POST['insert']))
 								</div>
 								<div class="card-body">
 
-									<table id="basic-datatable" class="table table-bordered table-hover">
+									<div class="table-responsive"><table id="basic-datatable" class="table table-bordered table-hover">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
@@ -186,7 +186,7 @@ if(isset($_POST['insert']))
                                                 <?php $cnt=$cnt+1; } ?>
 
                                             </tbody>
-                                        </table>
+                                        </table></div>
 								</div>
 							</div>
 						</div>

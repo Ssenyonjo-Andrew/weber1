@@ -13,8 +13,8 @@ if(!isset($_SESSION['auser']))
 
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Data Tables</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <title>Weber|Admin</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -36,6 +36,9 @@ if(!isset($_SESSION['auser']))
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+		
+		<!-- Admin Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/admin-responsive.css">
 		
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.min.js"></script>
@@ -59,7 +62,7 @@ if(!isset($_SESSION['auser']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<!-- <h3 class="page-title">Property</h3> -->
+								<h3 class="page-title">Property</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Property</li>
@@ -82,22 +85,23 @@ if(!isset($_SESSION['auser']))
 											if(isset($_GET['msg']))	
 											echo $_GET['msg'];	
 										?>
-                                        <table id="datatable-buttons" class="table table-striped dt-responsive nowrap">
-                                            <thead>
-                                                <tr>
-                                                    <!-- <th>P ID</th> -->
-                                                    <th>Title</th>
-                                                    <th>Type</th>
-                                                    <!-- <th>BHK</th> -->
-                                                    <th>S/R</th>
-                                                   
-													<th>Area</th>
-                                                    <th>Price</th>
-                                                    <th>Location</th>
-													<th>Status</th>
-                                                   
-                                                    
-                                                    <th>Added Date</th>
+                                        <div class="table-responsive">
+                                            <table id="datatable-buttons" class="table table-striped dt-responsive nowrap">
+                                                <thead>
+                                                    <tr>
+                                                        <!-- <th>P ID</th> -->
+                                                        <th>Title</th>
+                                                        <th>Type</th>
+                                                        <!-- <th>BHK</th> -->
+                                                        <th>S/R</th>
+                                                       
+														<th>Area</th>
+                                                        <th>Price</th>
+                                                        <th>Location</th>
+														<th>Status</th>
+                                                       
+                                                        
+                                                        <th>Added Date</th>
                                                     <th>Actions</th>
                                                     
                                                 </tr>

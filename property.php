@@ -39,7 +39,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -101,7 +101,7 @@ include("config.php");
                                     <div class="overlay-black overflow-hidden position-relative" style="border-radius:30px"> <img src="admin/property/<?php echo $row['10'];?>" alt="pimage">
                                         
                                         <div class="sale  text-white" style=" background-color:blue">For <?php echo $row['4'];?></div>
-                                        <div class="price  text-capitalize" style="color:orange">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
+                                        <div class="price  text-capitalize" style="color:orange">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?>(size)</span></div>
                                         
                                     </div>
                                     <div class="featured-thumb-data shadow-one" style="border-radius:30px; color:black; background-color:white;  opacity:.9">
@@ -167,12 +167,12 @@ include("config.php");
 
                        
                         
-                        <div class="sidebar-widget mt-5" style="background-color:black; padding:10px; border-radius:20px;  opacity:.7">
+                        <div class="sidebar-widget mt-5" style="background-color:black; padding:10px; border-radius:20px;  opacity:.9">
                             <h4 class="  position-relative pb-4 mb-4" style=" color:white;">Recently Added Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 7");
+								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 10");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>

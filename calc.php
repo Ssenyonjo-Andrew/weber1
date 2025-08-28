@@ -51,7 +51,7 @@ if(isset($_REQUEST['calc']))
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 

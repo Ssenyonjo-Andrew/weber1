@@ -8,27 +8,27 @@ if(!isset($_SESSION['auser']))
 	header("location:index.php");
 }
 ?>  
-  <div class="header">
+  <div class="header" style="background-color:black; color: white;">
 			
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="dashboard.php" class="logo">
-						<img src="assets/img/restatelg_white.jpg" alt="Logo" width="150" height="100">
+						<img src="assets/img/restatelg_white.jpg" alt="Logo" width="150" height="100" class="d-none d-md-block">
 					</a>
 					<a href="dashboard.php" class="logo logo-small">
-						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30" class="d-md-none">
 					</a>
                 </div>
 				<!-- /Logo -->
 				
-				<a href="javascript:void(0);" id="toggle_btn">
+				<a href="javascript:void(0);" id="toggle_btn" class="d-none d-lg-block">
 					<i class="fe fe-text-align-left"></i>
 				</a>
 				
 
 				
 				<!-- Mobile Menu Toggle -->
-				<a class="mobile_btn" id="mobile_btn">
+				<a class="mobile_btn d-lg-none" id="mobile_btn">
 					<i class="fa fa-bars"></i>
 				</a>
 				<!-- /Mobile Menu Toggle -->
@@ -42,6 +42,7 @@ if(!isset($_SESSION['auser']))
 					<li class="nav-item dropdown app-dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 							<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-02.jpg" width="31" alt="Admin"></span>
+							<span class="user-text d-none d-md-block"><?php echo $_SESSION['auser'];?></span>
 						</a>
 						
 						<div class="dropdown-menu" style='border-radius:20px; opacity:0.8'>
@@ -99,7 +100,8 @@ if(!isset($_SESSION['auser']))
 							</li>
 						
 							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> All Users </span> <span class="menu-arrow"></span></a>
+								 <a href="#"><i class="fe fe-user"></i> <span> All Users </span> <span class="menu-arrow"></span></a>
+                                
 								<ul style="display: none;">
 									<li><a href="adminlist.php"> Admin </a></li>
 									<li><a href="userlist.php"> Users </a></li>
@@ -113,6 +115,7 @@ if(!isset($_SESSION['auser']))
 							</li>
 						
 							<li class="submenu">
+							
 								<a href="#"><i class="fe fe-location"></i> <span>State & City</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a href="stateadd.php"> State </a></li>
@@ -161,3 +164,48 @@ if(!isset($_SESSION['auser']))
                 </div>
             </div>
 			<!-- /Sidebar -->
+
+<!-- Mobile Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<script>
+// Enhanced responsive sidebar functionality
+$(document).ready(function() {
+    // Mobile sidebar toggle
+    $('#mobile_btn').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $('#sidebar-overlay').toggleClass('active');
+    });
+    
+    // Close sidebar when clicking overlay
+    $('#sidebar-overlay').on('click', function() {
+        $('#sidebar').removeClass('active');
+        $('#sidebar-overlay').removeClass('active');
+    });
+    
+    // Submenu toggle for mobile
+    $('.submenu > a').on('click', function(e) {
+        e.preventDefault();
+        var $submenu = $(this).next('ul');
+        var $arrow = $(this).find('.menu-arrow');
+        
+        if ($submenu.is(':visible')) {
+            $submenu.slideUp();
+            $arrow.removeClass('rotate');
+        } else {
+            $('.submenu ul').slideUp();
+            $('.menu-arrow').removeClass('rotate');
+            $submenu.slideDown();
+            $arrow.addClass('rotate');
+        }
+    });
+    
+    // Close sidebar on window resize
+    $(window).on('resize', function() {
+        if ($(window).width() > 991) {
+            $('#sidebar').removeClass('active');
+            $('#sidebar-overlay').removeClass('active');
+        }
+    });
+});
+</script>

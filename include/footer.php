@@ -7,7 +7,7 @@
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
                                         <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/restatelg_white.jpg" style="border-radius:30px" height=200 width=200 alt="image"></a> </div>
-                                        <p class="pb-20 text-white">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis dignissim nam.</p>
+                                        <p class="pb-20 text-white">Contractors Limited is your trusted partner for all construction and renovation needs. With years of experience and a commitment to quality, we deliver exceptional results that exceed expectations. From residential projects to commercial developments, we build your vision with precision and care.</p>
 										
                                         </div>
                                 </div>
@@ -18,9 +18,9 @@
                                                 <h4 class="widget-title text-white  position-relative">Support</h4>
                                                 <ul class="hover-text-primary">
                                                     <li><a href="index.php" class="text-white">Home</a></li>
-                                                    <li><a href="property.php" class="text-white">Calculate Price Instalments</a></li>
-                                                    <li><a href="#" class="text-white">Frequently Asked Question</a></li>
-                                                    <li><a href="contact.php" class="text-white">Contact</a></li>
+                                                    <li><a href="property.php" class="text-white">Our Projects</a></li>
+                                                    <li><a href="#" class="text-white">Frequently Asked Questions</a></li>
+                                                    <li><a href="contact.php" class="text-white">Contact Us</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -29,9 +29,9 @@
                                                 <h4 class="widget-title text-white  position-relative">Quick Links</h4>
                                                 <ul class="hover-text-primary">
                                                     <li><a href="about.php" class="text-white">About Us</a></li>
-                                                    <li><a href="login.php" class="text-white">Access property</a></li>
-                                                    <li><a href="register.php" class="text-white">Join-Us</a></li>
-                                                    <li><a href="agent.php" class="text-white">Our Agents</a></li>
+                                                    <li><a href="property.php" class="text-white">Our Services</a></li>
+                                                    <li><a href="register.php" class="text-white">Get Quote</a></li>
+                                                    <li><a href="contact.php" class="text-white">Our Team</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@
                                                     <li class="hover-text-primary">27 Ingram Street, Dayton</li>
                                                     <li class="hover-text-primary">+256-756-408-028</li>
 													<li class="hover-text-primary">+256-703-720-539</li>
-                                                    <li class="hover-text-primary">hollandcontractorsltd@gmail.com</li>
+                                                    <li class="hover-text-primary">info@contractorslimited.com</li>
                                                 </ul>
                                             </div>
                                             <div class="footer-widget media-widget mt-4 text-white hover-text-primary"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fas fa-rss"></i></a> </div>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="row copyright">
-                    <div class="col-sm-6"> <span class="text-white">© <?php echo date('Y');?>hollandcontractorsltd</span> </div>
+                    <div class="col-sm-6"> <span class="text-white">© <?php echo date('Y');?> Contractors Limited. All rights reserved.</span> </div>
                     <div class="col-sm-6">
                         <ul class="line-menu text-white hover-text-primary float-right">
                             <li><a href="#">Privacy & Policy</a></li>

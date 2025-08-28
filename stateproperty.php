@@ -42,7 +42,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -110,7 +110,7 @@ include("config.php");
                                         <div class="price  text-capitalize" style="color:orange">Shs<?php echo $row['6'];?> <span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
                                         
                                     </div>
-                                    <div class="featured-thumb-data shadow-one" style="border-radius:30px; background-color:white">
+                                    <div class="featured-thumb-data shadow-one" style="border-radius:30px; background-color:white; opacity:.8">
                                         <div class="p-4">
                                             <h5 class=" hover-text-success mb-2 text-capitalize" style="color:black"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                             <span class="location text-capitalize" style="color:black"><i class="fas fa-map-marker-alt " style="color:black"></i> <?php echo $row['7'];?></span> </div>
@@ -172,12 +172,12 @@ include("config.php");
                         </form>
                         </div>
                         
-                        <div class="sidebar-widget mt-5" style="background-color:black; padding:10px; border-radius:30px">
+                        <div class="sidebar-widget mt-5" style="background-color:black; padding:10px; border-radius:30px; opacity:.9">
                             <h4 class=" position-relative pb-4 mb-4" style="color:white">Recently Added Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 10");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>

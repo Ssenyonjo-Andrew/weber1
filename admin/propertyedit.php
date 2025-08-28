@@ -88,8 +88,8 @@ if(isset($_POST['add']))
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | Property</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <title>Weber|Admin</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -126,7 +126,7 @@ if(isset($_POST['add']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<!-- <h3 class="page-title">Property</h3> -->
+								<h3 class="page-title">Property</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Property</li>
@@ -185,25 +185,26 @@ if(isset($_POST['add']))
 													<select class="form-control" required name="ptype">
 															<option value="">Select Type</option>
 															<option value="apartment">Apartments</option>
-															<option value="Renovations">Renovations</option>
-															<option value="building">Construction</option>
-															<option value="house">House</option>
-															<option value="villa">Plumbing</option>
+															<option value="flat">Flats</option>
+															<option value="vehicle">vehicles</option>
+															<option value="Land">Land</option>
 															<option value="office">Office</option>
-															<option value="office">Sell-Land</option>
-															<option value="office">Buy-Land</option>
-															<option value="office">Electricity-Installation</option>
-															<option value="office">Land-Surveying</option>
-														</select>
+													</select>
 													</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Selling Type</label>
 													<div class="col-lg-9">
 														<select class="form-control" required name="stype">
-															<option value="">Select Status</option>
+														<option value="">Select Status</option>
 															<option value="rent">Rent</option>
 															<option value="sale">Sale</option>
+															<option value="renovation">Renovation</option>
+															<option value="plumbing">Plumbing</option>
+															<option value="land-surveying">Land-surveying</option>
+															<option value="construction">Construction</option>
+															<option value="land-grading">Land-grading</option>
+															<option value="power-installation">Electrical-Installation</option>
 														</select>
 													</div>
 												</div>

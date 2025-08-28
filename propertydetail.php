@@ -40,7 +40,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -116,7 +116,7 @@ include("config.php");
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-4" style="background-color:white; padding:10px; border-radius:20px"> 
+                        <div class="row mb-4" style="background-color:white; padding:10px; border-radius:20px; opacity:.9"> 
                             <div class="col-md-6">
                                 <div class=" d-table  text-capitalize" style="border-radius:10px; padding:5px; background-color:orange; color:black">For <?php echo $row['4'];?></div>
                                 <h5 class="mt-2  text-capitalize" style="color:blue"><?php echo $row['1'];?></h5>
@@ -127,7 +127,7 @@ include("config.php");
                                 <div class="text-left text-md-right">Price</div>
                             </div>
                         </div>
-                        <div class="property-details" style="background-color:white; padding:10px; border-radius:20px">
+                        <div class="property-details" style="background-color:white; padding:10px; border-radius:20px; opacity:.9">
                             <!-- <div class="bg-gray property-quantity px-4 pt-4 w-100">
                                 <ul>
                                     <li><span class="text-secondary"><?php echo $row['12'];?></span> Sqft</li>
@@ -277,12 +277,12 @@ include("config.php");
                         </form>
                         
 
-                        <div class="sidebar-widget mt-5" style="background-color:white; padding:10px; border-radius:20px">
+                        <div class="sidebar-widget mt-5" style="background-color:white; padding:10px; border-radius:20px; opacity:.9">
                             <h4 class=" position-relative pb-4 mb-4" style="color:black">Recently Added Property</h4>
                             <ul class="property_list_widget">
 							
 								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 7");
+								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 10");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>

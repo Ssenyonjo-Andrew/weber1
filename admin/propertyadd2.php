@@ -82,8 +82,8 @@ if(isset($_POST['add']))
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | Property</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <title>Weber|Admin</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -99,6 +99,9 @@ if(isset($_POST['add']))
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+		
+		<!-- Admin Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/admin-responsive.css">
 		
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.min.js"></script>

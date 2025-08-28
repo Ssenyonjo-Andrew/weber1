@@ -13,7 +13,7 @@ if(!isset($_SESSION['auser']))
 
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
         <title>LM Homes | Admin</title>
 		
 		<!-- Favicon -->
@@ -82,7 +82,7 @@ if(!isset($_SESSION['auser']))
 								</div>
 								<div class="card-body" style="border-radius:20px">
 
-									<table id="basic-datatable" class="table table-bordered table-hover">
+									<div class="table-responsive"><table id="basic-datatable" class="table table-bordered table-hover">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
@@ -117,7 +117,7 @@ if(!isset($_SESSION['auser']))
 												?>
                                                
                                             </tbody>
-                                        </table>
+                                        </table></div>
 								</div>
 							</div>
 						</div>

@@ -82,8 +82,8 @@ if(isset($_POST['add']))
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | Property</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <title>Weber|Admin</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -120,7 +120,7 @@ if(isset($_POST['add']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<!-- <h3 class="page-title">Property</h3> -->
+								<h3 class="page-title">Property</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Property</li>
@@ -172,7 +172,7 @@ if(isset($_POST['add']))
 															<option value="">Select Type</option>
 															<option value="apartment">Apartments</option>
 															<option value="flat">Flats</option>
-															<option value="building">Building</option>
+															<option value="vehicle">vehicles</option>
 															<option value="Land">Land</option>
 															<option value="office">Office</option>
 														</select>
@@ -186,7 +186,6 @@ if(isset($_POST['add']))
 															<option value="rent">Rent</option>
 															<option value="sale">Sale</option>
 															<option value="renovation">Renovation</option>
-															
 															<option value="plumbing">Plumbing</option>
 															<option value="land-surveying">Land-surveying</option>
 															<option value="construction">Construction</option>

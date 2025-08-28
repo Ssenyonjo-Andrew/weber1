@@ -38,9 +38,149 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+<style>
+/* Banner Carousel Styles */
+.banner-slide {
+    position: relative;
+    width: 100%;
+}
+
+.banner-content {
+    padding-top: 0;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem !important;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem !important;
+}
+
+.search-form-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 35px 0;
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+.search-form {
+    background: transparent;
+}
+
+.search-form .form-control {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    color: #333;
+    height: 50px;
+    font-size: 14px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.search-form .form-control:focus {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.search-form .btn {
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: 90px;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators li.active {
+    background-color: #ffa500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-form-overlay {
+        bottom: 15px;
+        margin: 0 10px;
+        padding: 25px 0;
+    }
+    
+    .carousel-indicators {
+        bottom: 80px;
+    }
+    
+    .banner-slide {
+        height: 450px !important;
+    }
+    
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .banner-content p {
+        font-size: 1rem;
+    }
+    
+    .search-form .form-control,
+    .search-form .btn {
+        height: 45px;
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+    
+    .search-form .btn {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}
+</style>
+
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -61,35 +201,101 @@ include("config.php");
         <!--	Header end  -->
 		
         <!--	Banner Start   -->
-        <div class=" w-100 slider-banner1  position-relative" style="background-image: url('images/09.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-            <div class="container h-100 overlay-secondary">
-                <div class="row h-100 align-items-center">
-                    <div class="col-lg-12">
-                        <div class="text-white">
-                            <h1 class="mb-4" style="color:white"><span>FUTURE</span><br>
-                            BUILT WITH CARE..</h1>
-                            <form method="post" action="propertygrid.php">
+        <div class="overlay-black w-100 slider-banner1 position-relative">
+            <!-- Banner Carousel -->
+            <div id="bannerCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="banner-slide" style="background-image: url('images/09.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 500px;">
+                            <div class="container overlay-secondary h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-lg-12">
+                                        <div class="text-white banner-content">
+                                            <h1 class="mb-3" style="color:white"><span>YOU ARE</span><br>
+                                            WELCOME TO CONTRACTORS LIMITED</h1>
+                                            <p class="mb-3">Excellence in construction, renovation, and project management</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-slide" style="background-image: url('images/08.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 500px;">
+                            <div class="container overlay-secondary h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-lg-12">
+                                        <div class="text-white banner-content">
+                                            <h1 class="mb-3" style="color:white"><span>QUALITY</span><br>
+                                            CONSTRUCTION SERVICES</h1>
+                                            <p class="mb-3">Professional contractors delivering exceptional results</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-slide" style="background-image: url('images/05.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 500px;">
+                            <div class="container overlay-secondary h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-lg-12">
+                                        <div class="text-white banner-content">
+                                            <h1 class="mb-3" style="color:white"><span>TRUSTED</span><br>
+                                            PARTNERS IN BUILDING</h1>
+                                            <p class="mb-3">Your vision, our expertise, exceptional outcomes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                
+                <!-- Carousel Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                    <li data-target="#bannerCarousel" data-slide-to="2"></li>
+                </ol>
+            </div>
+            
+            <!-- Search Form Overlay -->
+            <div class="search-form-overlay">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <form method="post" action="propertygrid2.php" class="search-form">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
-                                            <select class="form-control" name="type" style=" border-radius: 30px ">
+                                            <select class="form-control" name="type" style="border-radius: 30px">
                                                 <option value="">Select Type</option>
 												<option value="apartment">Apartments</option>
 												<option value="flat">Flats</option>
-												<option value="building">Building</option>
+												<option value="vehicle">vehicles</option>
 												<option value="Land">Land</option>
 												<option value="office">Office</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-2">
-                                        <div class="form-group" >
-                                            <select class="form-control" name="stype" style=" border-radius: 30px ">
-                                                <option value="">Select Status</option>
-												<option value="rent">Rent</option>
-												<option value="sale">Sale</option>
+                                        <div class="form-group">
+                                            <select class="form-control" name="stype" style="border-radius: 30px">
+                                            <option value="">Select Status</option>
+                                                <option value="rent">Rent</option>
+                                                <option value="sale">Sale</option>
                                                 <option value="renovation">Renovation</option>
-                                                
                                                 <option value="plumbing">Plumbing</option>
                                                 <option value="land-surveying">Land-surveying</option>
                                                 <option value="construction">Construction</option>
@@ -100,12 +306,12 @@ include("config.php");
                                     </div>
                                     <div class="col-md-8 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="city" style=" border-radius: 30px " placeholder="Enter City" required>
+                                            <input type="text" class="form-control" name="city" style="border-radius: 30px" placeholder="Enter City" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-lg-2">
                                         <div class="form-group">
-                                            <button type="submit" name="filter" class="btn  w-100" style="background-color: orange; border-radius: 30px ">Search Property</button>
+                                            <button type="submit" name="filter" class="btn w-100" style="background-color: orange; padding:5px;border-radius: 30px">Search</button>
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +325,7 @@ include("config.php");
         
         <!--	Text Block One
 		======================================================-->
-        <div class="full-row">
+        <!-- <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -158,7 +364,7 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 		<!-----  Our Services  ---->
 		
         <!--	Recent Properties  -->
@@ -191,11 +397,11 @@ include("config.php");
                                             <div class="overlay-black overflow-hidden position-relative " style=" border-radius:20px"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
                                                 <div class="featured  text-white" style=" background-color: blue">New</div>
                                                 <div class="sale  text-white text-capitalize" style=" background-color: blue">For <?php echo $row['4'];?></div>
-                                                <div class="price" style="color: orange"><b>Shs<?php echo $row['6'];?> </b><span class="text-white"><?php echo $row['5'];?> Sqft</span></div>
+                                                <div class="price" style="color: orange"><b>Shs<?php echo $row['6'];?> </b><span class="text-white"><?php echo $row['5'];?> (size)</span></div>
                                             </div>
                                             <div class="featured-thumb-data shadow-one" style=" border-radius:20px; opacity:.9">
                                                 <div class="p-3">
-                                                    <h5 class=" hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
+                                                    <h5 class=" hover-text-success mb-2 text-capitalize"><a href="propertydetail2.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                                     <span class="location text-capitalize"><?php echo $row['7'];?></span> </div>
                                                 <!-- <div class="bg-gray quantity px-4 pt-4">
                                                     <ul>
@@ -229,7 +435,7 @@ include("config.php");
 		<!--	Recent Properties  -->
         
         <!--	Why Choose Us -->
-        <div class="full-row living bg-one overlay-secondary-half " style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <!-- <div class="full-row living bg-one overlay-secondary-half " style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container" >
                 <div class="row" >
                     <div class="col-md-12 col-lg-6" >
@@ -262,11 +468,11 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 		<!--	why choose us -->
 		
 		<!--	How it work -->
-        <div class="full-row">
+        <!-- <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -300,7 +506,7 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!--	How It Work -->
         
@@ -389,7 +595,7 @@ include("config.php");
 											while($row=mysqli_fetch_array($query))
 												{
 										?>
-                                    <h4 class="hover-text-success text-capitalize"><a href="stateproperty.php?id=<?php echo $row['state'];?>"><?php echo $row['state']?></a></h4>
+                                    <h4 class="hover-text-success text-capitalize"><a href="stateproperty2.php?id=<?php echo $row['state'];?>"><?php echo $row['state']?></a></h4>
                                     <span><?php 
 												$total = $row[0];
 												echo $total;?> Properties Listed</span> </div>
@@ -404,7 +610,7 @@ include("config.php");
 											while($row=mysqli_fetch_array($query))
 												{
 										?>
-                                    <h4 class="hover-text-success text-capitalize"><a href="stateproperty.php?id=<?php echo $row['16']?>"><?php echo $row['state'];?></a></h4>
+                                    <h4 class="hover-text-success text-capitalize"><a href="stateproperty2.php?id=<?php echo $row['16']?>"><?php echo $row['state'];?></a></h4>
                                     <span><?php 
 												$total = $row[0];
 												echo $total;?> Properties Listed</span> </div>
@@ -448,7 +654,7 @@ include("config.php");
         <!--	Popular Places -->
 		
 		<!--	Testonomial -->
-		<div class="full-row">
+		<!-- <div class="full-row">
             <div class="container">
                 <div class="row">
 					<div class="col-lg-12">
@@ -478,12 +684,12 @@ include("config.php");
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!--	Testonomial -->
 		
 		
         <!--	Footer   start-->
-		<?php include("include/footer.php");?>
+		<?php include("include/footer2.php");?>
 		<!--	Footer   start-->
         
         
@@ -514,6 +720,30 @@ include("config.php");
 <script src="js/validate.js"></script> 
 <script src="js/jquery.cookie.js"></script> 
 <script src="js/custom.js"></script>
+
+<script>
+// Banner Carousel Initialization
+$(document).ready(function() {
+    // Initialize the banner carousel
+    $('#bannerCarousel').carousel({
+        interval: 15000, // 15 seconds
+        pause: 'hover',
+        wrap: true
+    });
+    
+    // Add smooth transitions
+    $('#bannerCarousel').on('slide.bs.carousel', function () {
+        $(this).find('.carousel-item').addClass('transitioning');
+    });
+    
+    $('#bannerCarousel').on('slid.bs.carousel', function () {
+        $(this).find('.carousel-item').removeClass('transitioning');
+    });
+    
+    // Auto-play on page load
+    $('#bannerCarousel').carousel('cycle');
+});
+</script>
 </body>
 
 </html>

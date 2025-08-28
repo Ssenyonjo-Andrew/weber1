@@ -35,7 +35,7 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>RE Admin - Login</title>
+        <title>Weber|Admin-Login</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -64,7 +64,7 @@
                 	<div class="loginbox" style="border-radius:20px; opacity:0.9">
                         <div class="login-right">
 							<div class="login-right-wrap">
-								<h1>Admin Login Panel</h1>
+								<h1>HollandContractors<br>Admin-Panel</h1>
 								<p class="account-subtitle">Access our dashboard</p>
 								<p style="color:red;"><?php echo $error; ?></p>
 								<!-- Form -->

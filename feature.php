@@ -43,7 +43,7 @@ if(!isset($_SESSION['uemail']))
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -62,7 +62,7 @@ if(!isset($_SESSION['uemail']))
 <div id="page-wrapper">
     <div class="row"> 
         <!--	Header start  -->
-		<?php include("include/header.php");?>
+		<?php include("include/header2.php");?>
         <!--	Header end  -->
         
         <!--	Banner   --->

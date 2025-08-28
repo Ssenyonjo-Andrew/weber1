@@ -57,7 +57,7 @@ if(isset($_POST['send']))
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title>German-Weber</title>
 </head>
 <body>
 
@@ -102,7 +102,7 @@ if(isset($_POST['send']))
         <div class="full-row"  style="background-image: url('images/09.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 mb-5 " style="border-radius:30px; background-color:black">
+                    <div class="col-lg-4 mb-5 " style="border-radius:30px; opacity:.9; background-color:black">
                         <div class="contact-info"style="border-radius:30px" >
                             <h3 class="mb-4 mt-4 text-white">Contacts</h3>
 							
@@ -110,7 +110,7 @@ if(isset($_POST['send']))
                                 <li class="d-flex mb-4">
                                     <div class="contact-address" >
                                         <h5 class="text-white">Address</h5>
-                                        <span class="text-white">27 Ingram Street, Dayton</span> <br>
+                                        <!-- <span class="text-white">27 Ingram Street, Dayton</span> <br> -->
 										<span class="text-white">27 Ingram Street, Dayton</span>
 										</div>
                                 </li>
@@ -146,20 +146,20 @@ if(isset($_POST['send']))
 									<div class="row">
 										<div class="row mb-4">
 											<div class="form-group col-lg-6" >
-												<input type="text"  name="name" class="form-control" placeholder="Your Name*" style="border-radius:30px">
+												<input type="text"  name="name" class="form-control" placeholder="Your Name*" style="opacity:.9; border-radius:30px">
 											</div>
 											<div class="form-group col-lg-6">
-												<input type="text"  name="email" class="form-control" placeholder="Email Address*" style="border-radius:30px">
+												<input type="text"  name="email" class="form-control" placeholder="Email Address*" style="opacity:.9; border-radius:30px">
 											</div>
 											<div class="form-group col-lg-6">
-												<input type="text"  name="phone" class="form-control" placeholder="Phone" maxlength="10" style="border-radius:30px">
+												<input type="text"  name="phone" class="form-control" placeholder="Phone" maxlength="10" style="opacity:.9; border-radius:30px">
 											</div>
 											<div class="form-group col-lg-6">
-												<input type="text" name="subject"  class="form-control" placeholder="Subject" style="border-radius:30px">
+												<input type="text" name="subject"  class="form-control" placeholder="Subject" style="opacity:.9; border-radius:30px">
 											</div>
 											<div class="col-lg-12">
 												<div class="form-group">
-													<textarea name="message" class="form-control" rows="5" placeholder="Type Comments..." style="border-radius:30px"></textarea>
+													<textarea name="message" class="form-control" rows="5" placeholder="Type Comments..." style="opacity:.9; border-radius:30px"></textarea>
 												</div>
 											</div>
 										</div>

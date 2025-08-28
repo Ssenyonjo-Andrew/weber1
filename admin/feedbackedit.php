@@ -35,8 +35,8 @@ if(isset($_POST['update']))
 
 <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <title>Weber|Admin</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -78,7 +78,7 @@ if(isset($_POST['update']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<!-- <h3 class="page-title">Feedback</h3> -->
+								<h3 class="page-title">Feedback</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Feedback</li>
